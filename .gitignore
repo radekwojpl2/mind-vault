@@ -1,0 +1,18 @@
+# Obsidian workspace files
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian cache
+.obsidian/cache
+
+# Obsidian plugin data (optional — remove if you want to sync plugin settings)
+# .obsidian/plugins/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code local settings (may contain API keys / MCP configs)
+.claude/settings.local.json
