@@ -1,10 +1,10 @@
 # Obsidian workspace files
-.obsidian/workspace
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
+**/.obsidian/workspace
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
 
 # Obsidian cache
-.obsidian/cache
+**/.obsidian/cache
 
 # Obsidian plugin data (optional — remove if you want to sync plugin settings)
 # .obsidian/plugins/

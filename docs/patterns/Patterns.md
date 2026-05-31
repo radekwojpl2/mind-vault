@@ -26,6 +26,8 @@ Project-agnostic, copy-paste-ready guidelines. Each note covers what the pattern
 ## Architecture
 
 - [[Modular-Monolith]] — single deployable with hard module boundaries, event-driven cross-module comms
+- [[Modular-Monolith-Building-Blocks]] — shared kernel layer providing cross-cutting contracts, base types, and test infrastructure for a modular monolith
+- [[Local-Solution-Libraries]] — self-contained utility libs in a `Libs/` folder; NuGet-level isolation without publishing overhead
 - [[Module-Self-Registration]] — each module owns its `AddXxxModule()` extension; `Program.cs` stays thin
 - [[Vertical-Slices]] — feature-first folder organisation; one folder per use-case at every layer
 
