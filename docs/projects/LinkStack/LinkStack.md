@@ -1,4 +1,5 @@
 ---
+type: Index
 tags: [linkstack, index, dotnet, modular-monolith]
 ---
 

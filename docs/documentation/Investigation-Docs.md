@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [documentation, research, investigation, poc]
 ---
 

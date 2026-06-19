@@ -1,4 +1,5 @@
 ---
+type: Module
 tags: [linkstack, module, links, cqrs, events]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Module
 tags: [linkstack, module, users, auth0, subscriptions]
 ---
 

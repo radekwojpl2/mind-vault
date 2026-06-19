@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, ai, llm, ci-cd, gates, automation, claude]
 ---
 

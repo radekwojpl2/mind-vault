@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [documentation, guidelines, conventions, standards, code-review]
 ---
 

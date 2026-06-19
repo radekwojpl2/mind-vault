@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [blue-green-deployment, pattern, migrations, postgresql, expand-contract]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Index
 tags: [sentry-poc, index, dotnet, nextjs, sentry, observability]
 ---
 

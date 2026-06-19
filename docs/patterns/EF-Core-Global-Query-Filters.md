@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, ef-core, multi-tenancy, security, dotnet]
 ---
 

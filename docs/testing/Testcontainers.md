@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [testing, testcontainers, docker, integration-tests, infrastructure]
 ---
 

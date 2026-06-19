@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [testing, e2e, end-to-end, aspnetcore]
 ---
 

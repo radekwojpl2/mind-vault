@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, specification, query, ddd, domain]
 ---
 

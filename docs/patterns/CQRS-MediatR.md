@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, cqrs, mediatr, application, commands, queries]
 ---
 

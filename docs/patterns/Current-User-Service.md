@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, authentication, identity, di, aspnetcore]
 ---
 

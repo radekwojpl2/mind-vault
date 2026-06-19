@@ -1,4 +1,5 @@
 ---
+type: Architecture
 tags: [linkstack, architecture, dotnet, modular-monolith, clean-architecture]
 ---
 

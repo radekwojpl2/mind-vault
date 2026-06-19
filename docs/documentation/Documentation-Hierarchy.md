@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [documentation, strategy, architecture, overview]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [blue-green-deployment, pipelines, github-actions, azure, ci-cd, deploy]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [sentry-poc, sentry, observability, distributed-tracing, metrics, nextjs, dotnet]
 ---
 

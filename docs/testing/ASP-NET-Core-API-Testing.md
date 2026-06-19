@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [testing, aspnetcore, webapplicationfactory, integration-tests, api]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Index
 tags: [index, documentation, strategy]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [linkstack, dev-setup, docker, dotnet, operations]
 ---
 

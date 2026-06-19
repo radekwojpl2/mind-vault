@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [documentation, architecture, arc42, framework]
 ---
 

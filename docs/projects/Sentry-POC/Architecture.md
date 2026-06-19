@@ -1,4 +1,5 @@
 ---
+type: Architecture
 tags: [sentry-poc, architecture, dotnet, nextjs]
 ---
 

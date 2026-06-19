@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [testing, bdd, specflow, gherkin, behaviour]
 ---
 

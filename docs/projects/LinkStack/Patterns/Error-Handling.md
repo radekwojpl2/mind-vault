@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [linkstack, pattern, error-handling, exceptions, problem-details]
 ---
 

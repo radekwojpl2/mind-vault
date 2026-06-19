@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, error-handling, exceptions, problem-details, http, api]
 ---
 

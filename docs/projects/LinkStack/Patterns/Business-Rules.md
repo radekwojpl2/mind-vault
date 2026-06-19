@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [linkstack, pattern, ddd, business-rules, domain]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, outbox, messaging, reliability, masstransit, ef-core]
 ---
 

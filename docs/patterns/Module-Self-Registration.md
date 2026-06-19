@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, di, dependency-injection, modules, dotnet, architecture]
 ---
 

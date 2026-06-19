@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, architecture, modular-monolith, shared-kernel, ddd]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Architecture
 tags: [blue-green-deployment, architecture, azure, container-apps, github-actions, bicep]
 ---
 

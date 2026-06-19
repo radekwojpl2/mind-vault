@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [linkstack, pattern, multi-tenancy, ef-core, security]
 ---
 

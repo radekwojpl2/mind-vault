@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [linkstack, authentication, authorization, jwt, auth0]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [testing, test-data, builders, fixtures, integration-tests]
 ---
 

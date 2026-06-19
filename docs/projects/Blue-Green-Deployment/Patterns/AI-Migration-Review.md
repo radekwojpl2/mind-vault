@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [blue-green-deployment, pattern, ai, claude, migrations, ci-cd, github-actions]
 ---
 

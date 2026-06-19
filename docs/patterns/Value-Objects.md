@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, ddd, domain, value-object, validation]
 ---
 

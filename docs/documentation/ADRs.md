@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [documentation, adr, architecture, decisions]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, deployment, blue-green, zero-downtime, infrastructure]
 ---
 

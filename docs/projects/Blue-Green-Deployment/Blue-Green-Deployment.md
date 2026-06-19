@@ -1,4 +1,5 @@
 ---
+type: Index
 tags: [blue-green-deployment, index, dotnet, azure, postgresql, github-actions, ai]
 ---
 

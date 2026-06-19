@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [testing, strategy, overview]
 ---
 

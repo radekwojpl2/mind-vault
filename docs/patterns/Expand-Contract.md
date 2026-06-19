@@ -1,4 +1,5 @@
 ---
+type: Pattern
 tags: [pattern, migrations, database, expand-contract, zero-downtime, blue-green]
 ---
 

@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [testing, integration-tests, testcontainers, aspnetcore]
 ---
 
