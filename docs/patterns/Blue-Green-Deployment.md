@@ -63,4 +63,4 @@ Because the old environment stays running throughout, rollback is a traffic weig
 
 ## Real-World Example
 
-- [[projects/Blue-Green-Deployment/Blue-Green-Deployment]] — Azure Container Apps implementation using labeled revisions, label-based traffic weights, and revision-specific smoke test URLs
+- [[Blue-Green-Deployment.index]] — Azure Container Apps implementation using labeled revisions, label-based traffic weights, and revision-specific smoke test URLs

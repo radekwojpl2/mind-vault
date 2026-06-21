@@ -214,7 +214,7 @@ Deletes the entire resource group and all resources inside it. `--no-wait` means
 
 ## Related
 
-- [[Blue-Green-Deployment/Blue-Green-Deployment]]
+- [[Blue-Green-Deployment.index]]
 - [[Blue-Green-Deployment/Architecture]]
 - [[Blue-Green-Deployment/Patterns/Expand-Contract]]
 - [[Blue-Green-Deployment/Patterns/AI-Migration-Review]]
