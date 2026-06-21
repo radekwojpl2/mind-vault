@@ -21,6 +21,16 @@ docs/
       Patterns/             — project-specific pattern applications
 ```
 
+## Knowledge Format
+
+All notes in this vault follow the **Open Knowledge Format (OKF) v0.1** spec. Every new file must conform to it. See [[Spec]] (`docs/okf/Spec.md`) for the full reference.
+
+Key rules:
+- Every `.md` file (except `index.md` and `log.md`) must have a YAML frontmatter block with a non-empty `type` field
+- `index.md` / `*.index.md` — directory listing only, no frontmatter
+- `log.md` — chronological change history, newest entry first, dates in `YYYY-MM-DD`
+- Cross-links use Obsidian wiki-link syntax `[[NoteTitle]]` (bundle-relative, stable across moves)
+
 ## Authoring Conventions
 
 - **Frontmatter:** every note starts with `---\ntags: [...]\n---`
@@ -40,3 +50,16 @@ Key architectural rules captured in the docs:
 - Integration tests use Testcontainers (real PostgreSQL + RabbitMQ) — never mock the database
 
 See `docs/projects/LinkStack/Architecture.md` for the full layer map and constraints.
+
+## Git Commits
+
+- Do **not** add `Co-Authored-By: Claude` trailers to commit messages
+
+## DB Query Protocol
+
+When the user types a message starting with `DB:`:
+
+1. Read `.claude/settings.local.json` → `db.connections[db.default]`
+2. Tell the user: "Connecting to **`<database>`** on **`<environment>`** (`<host>`). Proceed?"
+3. Wait for explicit approval before running anything
+4. Execute the question as a read-only query via `psql <url> -c "<sql>"` and return the results
