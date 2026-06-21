@@ -14,3 +14,7 @@ Database tooling, setup scripts, and operational notes.
 ## Setup
 
 - [[AI-Readonly-User]] — read-only PostgreSQL role for AI agents and scripts
+
+## Observability
+
+- [[pg-stat-statements]] — enable and query per-user query statistics
