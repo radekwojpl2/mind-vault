@@ -54,12 +54,13 @@ See `docs/projects/LinkStack/Architecture.md` for the full layer map and constra
 ## Git Commits
 
 - Do **not** add `Co-Authored-By: Claude` trailers to commit messages
+- Before committing, update the `log.md` in every section that was modified
 
 ## DB Query Protocol
 
 When the user types a message starting with `DB:`:
 
 1. Read `.claude/settings.local.json` → `db.connections[db.default]`
-2. Tell the user: "Connecting to **`<database>`** on **`<environment>`** (`<host>`). Proceed?"
+2. Tell the user: "Connecting to **`<database>`** on **`<environment>`**. Proceed?"
 3. Wait for explicit approval before running anything
-4. Execute the question as a read-only query via `psql <url> -c "<sql>"` and return the results
+4. Use whatever tool is available to run the query (MCP, docker exec, psql, etc.) and return the results

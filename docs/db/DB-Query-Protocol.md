@@ -21,9 +21,9 @@ DB: What is the total revenue per tenant this month?
 ## What Claude Does
 
 1. Reads the active connection from `.claude/settings.local.json` → `db.connections[db.default]`
-2. Announces the target database and environment — e.g. **`demo`** on **`local`** (`localhost:5432`)
+2. Announces the target database and environment — e.g. **`demo`** on **`local`**
 3. Waits for your explicit approval before touching the database
-4. Translates the question into SQL, inspects the schema if needed, and runs the query via `docker exec <container> psql`
+4. Translates the question into SQL, inspects the schema if needed, and runs the query using whatever tool is available (MCP, docker exec, psql, etc.)
 5. Returns results and a plain-English summary
 
 ## Connection Config
@@ -36,10 +36,11 @@ Connections are stored in `.claude/settings.local.json` (gitignored — local on
     "default": "local",
     "connections": {
       "local": {
-        "url": "postgresql://ai_readonly:...@localhost:5432/demo",
         "environment": "local",
+        "host": "localhost:5432",
         "database": "demo",
-        "host": "localhost:5432"
+        "user": "ai_readonly",
+        "password": "..."
       }
     }
   }
