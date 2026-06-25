@@ -1,4 +1,5 @@
 ---
+type: Guide
 tags: [db, postgresql, mcp, ai-tooling, setup]
 ---
 
@@ -37,6 +38,17 @@ ALTER USER ai_readonly WITH NOLOGIN;
 -- restore with:
 ALTER USER ai_readonly WITH LOGIN;
 ```
+
+`NOLOGIN` only blocks **new** connections — any existing sessions survive until they disconnect naturally. To cut them immediately:
+
+```sql
+SELECT pg_terminate_backend(pid)
+FROM pg_stat_activity
+WHERE usename = 'ai_readonly'
+  AND pid <> pg_backend_pid();
+```
+
+For a read-only user there is nothing to worry about: `SELECT` leaves no writes to roll back, so sessions can be killed without any warm-down period.
 
 **Permanent — remove the role entirely:**
 

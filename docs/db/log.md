@@ -5,6 +5,11 @@ tags: [log, db]
 
 # DB — Change Log
 
+## 2026-06-25
+> Fix OKF conformance: add missing `type: Guide` frontmatter field
+
+Modified: [[AI-Readonly-User]]
+
 ## 2026-06-21
 > Add revocation instructions to AI readonly user note
 
