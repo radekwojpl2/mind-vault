@@ -1,0 +1,38 @@
+schema_version: "1.0"
+
+extension:
+  id: custom
+  name: "Finalize & Knowledge Capture"
+  version: "1.0.0"
+  description: "Summarize completed work and persist it to the mind-vault second brain"
+  author: spec-kit-core
+  repository: ""
+  license: MIT
+
+requires:
+  speckit_version: ">=0.2.0"
+  tools: []
+
+provides:
+  commands:
+    - name: speckit.custom.finalize-summary
+      file: commands/speckit.custom.finalize-summary.md
+      description: "Summarize the current feature and save it to the mind-vault knowledge base"
+
+hooks:
+  after_implement:
+    command: speckit.custom.finalize-summary
+    optional: true
+    prompt: "Summarize this feature and save it to the knowledge base?"
+    description: "Capture a feature summary in the mind-vault after implementation"
+
+tags:
+  - "knowledge"
+  - "summary"
+  - "vault"
+
+config:
+  defaults:
+    vault_path: "D:\\git\\mind-vault"
+    projects_subdir: "projects"
+    changelog_file: "changelog.md"
