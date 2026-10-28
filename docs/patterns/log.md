@@ -6,6 +6,11 @@ tags: [log, patterns]
 # Patterns — Change Log
 
 ## 2026-10-28
+> Inbox triage
+
+- Modified: [[Expand-Contract]] — added the catch-up backfill step (rows the old version writes between the migration and cutover)
+
+## 2026-10-28
 > `patterns` router skill
 
 - Modified: [[Patterns.index]] — points agents at the `patterns` skill; new patterns must get a routing row

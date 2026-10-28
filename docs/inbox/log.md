@@ -6,7 +6,10 @@ tags: [log, inbox]
 # Inbox — Change Log
 
 ## 2026-10-28
-* **Captured** (first `patterns` skill test): [[2026-10-28-bgd-rename-note-drift]], [[2026-10-28-ai-migration-review-drift]], [[2026-10-28-expand-contract-catch-up-backfill]].
+* **Triaged**: `2026-10-28-bgd-rename-note-drift` → [[Blue-Green-Deployment-Expand-Contract]]; `2026-10-28-ai-migration-review-drift` → [[AI-Migration-Review]], [[Pipelines]]; `2026-10-28-expand-contract-catch-up-backfill` → [[Expand-Contract]]. Inbox empty.
+
+## 2026-10-28
+* **Captured** (first `patterns` skill test): `2026-10-28-bgd-rename-note-drift`, `2026-10-28-ai-migration-review-drift`, `2026-10-28-expand-contract-catch-up-backfill`.
 
 ## 2026-10-28
 * **Triaged**: `2026-10-28-linkstack-constitution` → [[LinkStack-Constitution]]; `2026-10-28-demo-database-setup` → [[Demo-Database]]. Inbox empty.

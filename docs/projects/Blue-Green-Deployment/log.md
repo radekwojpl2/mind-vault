@@ -6,6 +6,13 @@ tags: [log, blue-green-deployment]
 # Blue-Green-Deployment — Change Log
 
 ## 2026-10-28
+> Inbox triage (drift found by the `patterns` skill test, checked in the repo)
+
+- Modified: [[Blue-Green-Deployment-Expand-Contract]] — the rename was 2 migrations over 2 deploys (not 3); real idempotent backfill with `WHERE`; no dual-write; added "What the POC doesn't show"
+- Modified: [[AI-Migration-Review]] — model `claude-sonnet-4-6`, `ISSUES:`/`FIX:` format, `jq` payload, `HEAD~1` push gap, fail-open on malformed replies, deleted-migration warning
+- Modified: [[Pipelines]] — `dotnet test` runs no tests (no test project)
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 4 (fixes from vault test run 1)
 
 - Modified: [[Blue-Green-Deployment-Architecture]] — slot detection and label handling corrected to match `deploy.yml` (JMESPath query; labels moved with `revision label add`, not via `--revision-suffix`)

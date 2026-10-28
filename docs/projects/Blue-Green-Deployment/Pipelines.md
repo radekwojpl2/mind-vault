@@ -4,7 +4,7 @@ tags: [blue-green-deployment, pipelines, github-actions, azure, ci-cd, deploy]
 status: stable
 confidence: medium
 source: [https://github.com/radekwojpl2/blue-green-deployment-poc]
-updated: 2026-05-31
+updated: 2026-10-28
 ---
 
 # Pipelines
@@ -21,7 +21,7 @@ Four GitHub Actions workflows. Build and Deploy run automatically on push to `ma
 3. dotnet restore
 4. dotnet build --no-restore -c Release
 5. Review migrations (AI)    ← bash scripts/check-migrations.sh
-6. dotnet test --no-build -c Release
+6. dotnet test --no-build -c Release     ← runs against the app project only; there is no test project, so no tests run
 ```
 
 The AI review step runs before tests — a migration blocked here never reaches the deploy pipeline. The `ANTHROPIC_API_KEY` secret is passed in; if absent (fork PRs), the script skips silently.

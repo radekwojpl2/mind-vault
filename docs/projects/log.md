@@ -6,6 +6,11 @@ tags: [log, projects]
 # Projects — Change Log
 
 ## 2026-10-28
+> Inbox triage
+
+**Blue-Green-Deployment** — Modified: [[Blue-Green-Deployment-Expand-Contract]], [[AI-Migration-Review]], [[Pipelines]]
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 4 (fixes from vault test run 1, checked against LinkStack `master`)
 
 **LinkStack** — Modified: [[LinkStack-Architecture]], [[Analytics]], [[LinkStack-Context]], [[LinkStack-Board]]
