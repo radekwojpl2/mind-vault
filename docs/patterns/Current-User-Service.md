@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [pattern, authentication, identity, di, aspnetcore]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Current User Service

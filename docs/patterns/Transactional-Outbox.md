@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [pattern, outbox, messaging, reliability, masstransit, ef-core]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Transactional Outbox

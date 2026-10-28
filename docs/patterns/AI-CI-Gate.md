@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [pattern, ai, llm, ci-cd, gates, automation, claude]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/blue-green-deployment-poc]
+updated: 2026-05-31
 ---
 
 # AI CI Gate

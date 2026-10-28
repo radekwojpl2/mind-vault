@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [pattern, ef-core, multi-tenancy, security, dotnet]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # EF Core Global Query Filters

@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [pattern, error-handling, exceptions, problem-details, http, api]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Typed Exceptions + Problem Details
