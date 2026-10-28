@@ -1,0 +1,9 @@
+#!/bin/sh
+# Blocks commits that break the vault. Enable once per clone:
+#   git config core.hooksPath .githooks
+if git diff --cached --name-only | grep -q '^docs/.*\.md$'; then
+  node scripts/validate-vault.js || {
+    echo "Vault validation failed - fix the problems above or run the knowledge skill." >&2
+    exit 1
+  }
+fi
