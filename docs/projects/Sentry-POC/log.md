@@ -6,6 +6,12 @@ tags: [log, sentry-poc]
 # Sentry-POC — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 2 (project context)
+
+- Added: [[Sentry-POC-Context]] — purpose, coverage, code location
+- Modified: [[Sentry-POC.index]] — Start Here section
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 1 (unique note names, link clean-up)
 
 - Renamed: `Architecture` → [[Sentry-POC-Architecture]]
