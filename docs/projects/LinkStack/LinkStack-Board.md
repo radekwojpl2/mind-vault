@@ -3,6 +3,10 @@ type: Board
 title: LinkStack — Board
 description: "Implemented, active, planned and archived LinkStack work, with links to specs, PRs and issues"
 tags: [linkstack, board, kanban, roadmap, status]
+status: stable
+confidence: high
+source: [https://github.com/radekwojpl2/LinkStack, https://github.com/radekwojpl2/blue-green-deployment-poc, https://github.com/radekwojpl2/dotnet-nextjs-sentry-poc]
+updated: 2026-10-28
 ---
 
 # LinkStack — Board

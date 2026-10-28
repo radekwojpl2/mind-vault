@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [linkstack, dev-setup, docker, dotnet, operations]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Dev Setup

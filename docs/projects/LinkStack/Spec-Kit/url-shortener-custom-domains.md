@@ -4,6 +4,9 @@ tags: [linkstack, spec-kit, links, feature]
 feature: 007-url-shortener-custom-domains
 status: draft
 date: 2026-06-30
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack]
+updated: 2026-10-28
 ---
 
 # URL Shortener with Custom Domains — Summary

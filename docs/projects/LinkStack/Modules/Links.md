@@ -1,6 +1,10 @@
 ---
 type: Module
 tags: [linkstack, module, links, cqrs, events]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Links Module

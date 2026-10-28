@@ -1,6 +1,10 @@
 ---
 type: Module
 tags: [linkstack, module, users, auth0, subscriptions]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Users Module

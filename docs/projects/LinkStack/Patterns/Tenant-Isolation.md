@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [linkstack, pattern, multi-tenancy, ef-core, security]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Tenant Isolation
