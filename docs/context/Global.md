@@ -3,6 +3,10 @@ type: Context
 title: Global Context
 description: "Owner, machine, repositories, tooling and standing principles that apply to every project"
 tags: [context, global, environment, repositories, tooling]
+status: stable
+confidence: high
+source: [environment, https://github.com/radekwojpl2]
+updated: 2026-10-28
 ---
 
 # Global Context

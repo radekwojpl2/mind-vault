@@ -2,6 +2,10 @@
 type: Reference
 tags: [okf, spec, format, knowledge-management]
 resource: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
+status: stable
+confidence: medium
+source: [https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md]
+updated: 2026-06-21
 ---
 
 # Open Knowledge Format (OKF) — Spec Reference

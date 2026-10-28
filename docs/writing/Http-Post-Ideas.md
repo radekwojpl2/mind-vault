@@ -4,6 +4,9 @@ title: HTTP API Post Series — Ideas
 description: "Planned blog post series on HTTP API design"
 tags: [writing, blog, http, api, backlog]
 status: draft
+confidence: medium
+source: [author]
+updated: 2026-10-28
 ---
 
 # HTTP API Post Series — Ideas
