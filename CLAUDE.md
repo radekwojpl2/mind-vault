@@ -60,6 +60,7 @@ Key rules:
 
 - Use the **`knowledge` skill** (`.claude/skills/knowledge/SKILL.md`) for answering from the vault, capturing, inbox triage, adding/updating notes and maintenance. It replaces the old `/new-pattern` command.
 - Run `node scripts/validate-vault.js` before every commit — it checks frontmatter, profile fields, unique names, broken links, orphans and log order. The pre-commit hook in `.githooks/` runs it automatically (enable once per clone: `git config core.hooksPath .githooks`), and the `Validate vault` GitHub Action runs it on every PR and push to `main`.
+- Scheduled and event-driven agent runs are GitHub Actions (`vault-maintenance.yml`, `vault-event.yml`) — see `docs/context/Vault-Automation.md`. The repo is **public**: never put secrets or private-repo source code in notes.
 - Agents change the vault **only through PRs** (branch → small commits → PR; stack PRs on unmerged work). Never push to `main`.
 
 ## Primary Project Documented: LinkStack

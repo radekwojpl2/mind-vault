@@ -6,6 +6,11 @@ tags: [log, context]
 # Context — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 5 (automation)
+
+- Added: [[Vault-Automation]] — weekly maintenance and event-driven update workflows (inert until secrets are set), sender snippet for project repos, safety notes
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 5 (inbox triage)
 
 - Modified: [[Global]] — the `docker/` demo DB is local only; links [[Demo-Database]]
