@@ -6,6 +6,9 @@ tags: [log, speckit]
 # SpecKit — Change Log
 
 ## 2026-10-28
+* **Modified**: `spec-kit-custom-rbajor` finalize command — writes to `docs/projects/<Project>/` and its `log.md` (owner's change), then aligned with the vault rules: `Spec-Kit/<feature-name>.md`, `type: Spec-Summary` with profile fields, index and board links, `## YYYY-MM-DD` log headings, and a branch plus PR instead of direct writes.
+
+## 2026-10-28
 * **Translated**: [[Spec-Driven-Development]] from Polish to English (English-only rule from [[Vault-Purpose]]).
 
 ## 2026-10-28
