@@ -8,10 +8,16 @@ An **Obsidian knowledge vault** — a collection of technical documentation writ
 
 The vault is opened in Obsidian (config at `docs/.obsidian/`). The `.gitignore` excludes workspace and cache files but tracks plugin settings and configuration.
 
+## Where to Start
+
+Read `docs/index.md` (root map of every section) and `docs/context/Global.md` (owner, machine, repos, tooling, standing principles) before answering questions from the vault. For a project, read its `<Project>.index.md` first.
+
 ## Content Structure
 
 ```
 docs/
+  index.md         — root entry point, links every section
+  context/         — global context (owner, environment, repos, principles)
   patterns/        — project-agnostic, copy-paste-ready engineering patterns
   projects/        — per-project documentation (LinkStack, Blue-Green-Deployment, Sentry-POC)
     <Project>/
