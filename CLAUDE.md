@@ -58,6 +58,7 @@ Key rules:
 
 ## Working with the Vault
 
+- The **`patterns` skill** (`.claude/skills/patterns/SKILL.md`, also linked into `~/.claude/skills/` so it works in every repo) routes design work to pattern notes. Keep its routing table in sync when patterns are added or renamed.
 - Use the **`knowledge` skill** (`.claude/skills/knowledge/SKILL.md`) for answering from the vault, capturing, inbox triage, adding/updating notes and maintenance. It replaces the old `/new-pattern` command.
 - Run `node scripts/validate-vault.js` before every commit — it checks frontmatter, profile fields, unique names, broken links, orphans and log order. The pre-commit hook in `.githooks/` runs it automatically (enable once per clone: `git config core.hooksPath .githooks`), and the `Validate vault` GitHub Action runs it on every PR and push to `main`.
 - Scheduled maintenance is a **Claude Code routine** ("mind-vault daily sync": daily board sync and inbox triage, full maintenance on Mondays) — see `docs/context/Vault-Automation.md`. The repo is **public** (owner's decision): never put secrets or private-repo source code in notes.

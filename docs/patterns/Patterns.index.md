@@ -7,6 +7,8 @@ tags: [index, patterns]
 
 Project-agnostic, copy-paste-ready guidelines. Each note covers what the pattern is, when to use it, a minimal implementation, and trade-offs.
 
+> Agents in any repo reach these notes through the **`patterns` skill** (`.claude/skills/patterns/SKILL.md`). It maps a task to the generic note plus the project override and applies their rules. When you add a pattern here, add a row to that skill's routing table in the same PR.
+
 ## Domain
 
 - [[Value-Objects]] — immutable domain primitives with built-in validation and structural equality
