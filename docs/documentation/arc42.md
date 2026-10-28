@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [documentation, architecture, arc42, framework]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # arc42 Architecture Documentation
