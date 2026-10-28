@@ -24,14 +24,15 @@ A read-only PostgreSQL role for giving AI agents (Claude Code MCP, scripts) safe
 Edit the three variables at the top of the script, then run as a superuser:
 
 ```bash
-psql -U postgres -d YOUR_DATABASE -f docs/db/create_readonly_user.sql
+# Copy the SQL from the create_readonly_user note into a file, then:
+psql -U postgres -d YOUR_DATABASE -f create_readonly_user.sql
 ```
 
 The script is idempotent — re-running it skips user creation if the role already exists.
 
 ## Script
 
-`[[create_readonly_user]]`
+The full SQL is in [[create_readonly_user]]. For the local demo database, the same script runs automatically from `docker/init/09_readonly_user.sql`.
 
 ## Revoking Access
 
