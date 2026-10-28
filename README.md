@@ -6,6 +6,8 @@ Personal Obsidian knowledge vault — engineering patterns and project documenta
 
 ```
 docs/
+  index.md         — root entry point, links every section
+  context/         — global context (owner, environment, repos, principles)
   patterns/        — project-agnostic, copy-paste-ready engineering patterns
   projects/        — per-project documentation
   testing/         — testing strategy and patterns
