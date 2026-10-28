@@ -3,13 +3,13 @@ type: Reference
 tags: [db, postgresql, ai-tooling, workflow]
 status: stable
 confidence: medium
-source: [author, https://github.com/radekwojpl2/mind-vault/tree/main/docker]
+source: [author, environment]
 updated: 2026-06-21
 ---
 
 # DB Query Protocol
 
-A shorthand for running natural-language database queries through Claude Code against the configured PostgreSQL connection.
+A shorthand for running natural-language database queries through Claude Code against the configured PostgreSQL connection. The default connection is the local [[Demo-Database]] (schemas, tables and grants are described there).
 
 ## Usage
 

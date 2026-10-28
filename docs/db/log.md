@@ -6,6 +6,13 @@ tags: [log, db]
 # DB — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 5 (inbox triage)
+
+- Added: [[Demo-Database]] — start/stop, five schemas and their tables, the actual `ai_readonly` grants (triaged from inbox)
+- Modified: [[DB-Query-Protocol]], [[AI-Readonly-User]], [[DB.index]] — link the demo DB guide
+- Fixed: `source` on [[DB-Query-Protocol]] and [[pg-stat-statements]] — `docker/` is git-ignored, so the GitHub URL didn't exist; now `environment`
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 4 (fixes from vault test run 1)
 
 - Modified: [[AI-Readonly-User]] — removed the dead `.sql` path, made the script link live, pointed to `docker/init/09_readonly_user.sql`
