@@ -6,6 +6,12 @@ tags: [log, context]
 # Context — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 4 (purpose and structure)
+
+- Added: [[Vault-Purpose]] — requirements from the owner (work reference + learning, readers, content, English-only, PR-only agents, 9/10 test bar and questions)
+- Added: [[Vault-Structure]] — options A/B/C compared; recommendation A, decision pending
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 3 (metadata backfill)
 
 - Modified: all concept notes — added `status`, `confidence`, `source`, `updated` per [[Vault-Profile]]; `updated` taken from the last content commit (frontmatter-only and link-fix commits ignored)
