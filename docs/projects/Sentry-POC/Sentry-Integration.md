@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [sentry-poc, sentry, observability, distributed-tracing, metrics, nextjs, dotnet]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/dotnet-nextjs-sentry-poc]
+updated: 2026-05-31
 ---
 
 # Sentry Integration

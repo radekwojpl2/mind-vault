@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [linkstack, authentication, authorization, jwt, auth0]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Authentication & Authorization

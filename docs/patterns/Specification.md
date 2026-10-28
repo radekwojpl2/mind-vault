@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [pattern, specification, query, ddd, domain]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Specification Pattern

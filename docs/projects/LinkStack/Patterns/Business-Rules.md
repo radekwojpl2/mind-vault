@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [linkstack, pattern, ddd, business-rules, domain]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Business Rules

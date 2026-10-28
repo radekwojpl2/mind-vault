@@ -3,6 +3,10 @@ type: Board
 title: Sentry POC — Board
 description: "Status of the Sentry POC: implemented, active, planned and archived work"
 tags: [sentry-poc, board, kanban, status]
+status: stable
+confidence: high
+source: [https://github.com/radekwojpl2/dotnet-nextjs-sentry-poc, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-10-28
 ---
 
 # Sentry POC — Board

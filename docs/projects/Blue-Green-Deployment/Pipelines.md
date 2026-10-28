@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [blue-green-deployment, pipelines, github-actions, azure, ci-cd, deploy]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/blue-green-deployment-poc]
+updated: 2026-05-31
 ---
 
 # Pipelines

@@ -3,6 +3,10 @@ type: Context
 title: LinkStack — Project Context
 description: "Big picture for LinkStack: purpose, feature map, where the code lives, glossary, known gaps"
 tags: [linkstack, context, overview, feature-map, glossary]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack, https://github.com/radekwojpl2/dotnet-nextjs-sentry-poc]
+updated: 2026-10-28
 ---
 
 # LinkStack — Project Context

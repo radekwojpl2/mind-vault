@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [linkstack, pattern, cqrs, mediatr, specification]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # CQRS Pattern

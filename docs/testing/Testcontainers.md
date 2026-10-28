@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [testing, testcontainers, docker, integration-tests, infrastructure]
+status: stable
+confidence: medium
+source: [author]
+updated: 2026-05-31
 ---
 
 # Testcontainers

@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [linkstack, pattern, outbox, masstransit, messaging, reliability]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Outbox Pattern

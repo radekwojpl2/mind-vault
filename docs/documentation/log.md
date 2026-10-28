@@ -6,6 +6,11 @@ tags: [log, documentation]
 # Documentation — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 3 (metadata backfill)
+
+- Modified: all concept notes — added `status`, `confidence`, `source`, `updated` per [[Vault-Profile]]; `updated` taken from the last content commit (frontmatter-only and link-fix commits ignored)
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 1 (unique note names, link clean-up)
 
 - Modified: [[ADRs]], [[Documentation-Hierarchy]] — links point to renamed / plain-name notes

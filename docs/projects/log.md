@@ -6,6 +6,11 @@ tags: [log, projects]
 # Projects — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 3 (metadata backfill)
+
+**All projects** — Modified: every concept note gained `status`, `confidence`, `source`, `updated` ([[Vault-Profile]])
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 2 (boards)
 
 **All projects** — Added: [[LinkStack-Board]], [[Blue-Green-Deployment-Board]], [[Sentry-POC-Board]]

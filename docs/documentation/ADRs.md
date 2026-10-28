@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [documentation, adr, architecture, decisions]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # Architecture Decision Records (ADRs)

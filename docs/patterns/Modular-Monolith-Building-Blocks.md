@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [pattern, architecture, modular-monolith, shared-kernel, ddd]
+status: stable
+confidence: medium
+source: [author]
+updated: 2026-05-31
 ---
 
 # Modular Monolith Building Blocks

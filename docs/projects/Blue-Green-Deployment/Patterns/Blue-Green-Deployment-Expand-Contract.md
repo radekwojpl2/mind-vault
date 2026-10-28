@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [blue-green-deployment, pattern, migrations, postgresql, expand-contract]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/blue-green-deployment-poc]
+updated: 2026-05-31
 ---
 
 # Expand/Contract — EF Core Implementation

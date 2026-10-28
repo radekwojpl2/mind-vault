@@ -6,6 +6,11 @@ tags: [log, patterns]
 # Patterns — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 3 (metadata backfill)
+
+- Modified: all concept notes — added `status`, `confidence`, `source`, `updated` per [[Vault-Profile]]; `updated` taken from the last content commit (frontmatter-only and link-fix commits ignored)
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 1 (unique note names, link clean-up)
 
 - Modified: [[AI-CI-Gate]], [[Business-Rule-Engine]], [[CQRS-MediatR]], [[Current-User-Service]], [[EF-Core-Global-Query-Filters]], [[Expand-Contract]], [[Modular-Monolith]], [[Module-Self-Registration]], [[Specification]], [[Transactional-Outbox]], [[Typed-Exceptions-Problem-Details]], [[Value-Objects]], [[Vertical-Slices]] — path-style links replaced with plain names

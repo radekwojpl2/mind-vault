@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [testing, aspnetcore, webapplicationfactory, integration-tests, api]
+status: stable
+confidence: medium
+source: [author]
+updated: 2026-05-31
 ---
 
 # ASP.NET Core API Testing

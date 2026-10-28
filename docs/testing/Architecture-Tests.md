@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [testing, architecture, netarchtest, clean-architecture, dotnet]
+status: stable
+confidence: medium
+source: [author]
+updated: 2026-10-28
 ---
 
 # Architecture Tests (.NET)

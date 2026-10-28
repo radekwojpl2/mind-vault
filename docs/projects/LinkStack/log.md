@@ -6,6 +6,11 @@ tags: [log, linkstack]
 # LinkStack — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 3 (metadata backfill)
+
+- Modified: all concept notes — added `status`, `confidence`, `source`, `updated` per [[Vault-Profile]]; `updated` taken from the last content commit (frontmatter-only and link-fix commits ignored)
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 2 (boards)
 
 - Added: [[LinkStack-Board]] — active PRs #34–#41 and tasks #11–#21, planned spec 007, releases v1.0–v1.7, archived Sentry

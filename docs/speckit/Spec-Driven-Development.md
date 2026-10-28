@@ -4,6 +4,9 @@ title: Spec-Driven Development (SDD) with SpecKit
 description: "SDD methodology and the SpecKit command workflow, step by step"
 tags: [speckit, sdd, spec-driven-development, workflow, ai]
 status: draft
+confidence: medium
+source: [author, https://github.com/github/spec-kit]
+updated: 2026-10-28
 ---
 
 # Spec-Driven Development (SDD)

@@ -1,6 +1,10 @@
 ---
 type: Architecture
 tags: [sentry-poc, architecture, dotnet, nextjs]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/dotnet-nextjs-sentry-poc]
+updated: 2026-05-31
 ---
 
 # Architecture

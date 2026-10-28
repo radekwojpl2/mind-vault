@@ -3,6 +3,10 @@ type: Context
 title: Sentry POC — Project Context
 description: "Big picture for the Sentry POC: why it exists, what it covers, where the code lives"
 tags: [sentry-poc, context, overview, poc, observability]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/dotnet-nextjs-sentry-poc, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-10-28
 ---
 
 # Sentry POC — Project Context
