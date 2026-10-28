@@ -11,6 +11,12 @@ A proof-of-concept demonstrating **full-stack Sentry observability** across a .N
 
 ---
 
+## Start Here
+
+- [[Sentry-POC-Context]] — why the POC exists, what it covers, where the code lives
+
+---
+
 ## Architecture
 
 - [[Sentry-POC-Architecture]] — service layout, CORS, containerization, deployment (DigitalOcean App Platform)
