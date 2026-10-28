@@ -53,8 +53,14 @@ Key rules:
 
 - **Frontmatter:** every note starts with `---\ntype: <Type>\ntags: [...]\n---` (`type` is required, e.g. Pattern, Guide, Module, Index, Log); concept notes add `status`, `confidence`, `source`, `updated` after `tags` — see [[Vault-Profile]]
 - **Internal links:** use Obsidian wiki-link syntax `[[NoteTitle]]` — never Markdown `[text](path.md)` links for cross-note references
-- **Note structure:** what the pattern/concept is → when to use it → minimal implementation → trade-offs
+- **Note structure:** pick the type and its usual sections from `docs/okf/Note-Types.md` — guidance, not a rigid template
 - **Index notes** (e.g. `Patterns.index.md`, `LinkStack.index.md`) list child notes as `[[WikiLinks]]` grouped by category; they do not duplicate content from child notes
+
+## Working with the Vault
+
+- Use the **`knowledge` skill** (`.claude/skills/knowledge/SKILL.md`) for answering from the vault, capturing, inbox triage, adding/updating notes and maintenance. It replaces the old `/new-pattern` command.
+- Run `node scripts/validate-vault.js` before every commit — it checks frontmatter, profile fields, unique names, broken links, orphans and log order.
+- Agents change the vault **only through PRs** (branch → small commits → PR; stack PRs on unmerged work). Never push to `main`.
 
 ## Primary Project Documented: LinkStack
 
