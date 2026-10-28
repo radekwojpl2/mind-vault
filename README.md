@@ -12,6 +12,8 @@ docs/
   documentation/   — docs standards (ADRs, arc42, coding guidelines)
   db/              — PostgreSQL tooling, AI readonly user setup, query protocol
   okf/             — Open Knowledge Format spec reference
+  speckit/         — SpecKit / spec-driven development notes and extensions
+  writing/         — drafts and ideas for posts
 ```
 
 ## Patterns

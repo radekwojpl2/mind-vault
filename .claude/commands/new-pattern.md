@@ -20,6 +20,7 @@ Use this exact structure:
 
 ```
 ---
+type: Pattern
 tags: [pattern, <lowercase-tags-relevant-to-the-pattern>]
 ---
 
@@ -56,7 +57,7 @@ tags: [pattern, <lowercase-tags-relevant-to-the-pattern>]
 
 Only include sections that have real content. Omit `## Rules` if there are no crisp, named rules. Omit `## Real-World Example` unless a concrete project reference exists.
 
-### 2. Update `docs/patterns/Patterns.md`
+### 2. Update `docs/patterns/Patterns.index.md`
 
 Add a `[[<PatternName>]]` entry under the correct category section using this format:
 
@@ -64,4 +65,4 @@ Add a `[[<PatternName>]]` entry under the correct category section using this fo
 - [[<PatternName>]] — <short one-line description matching the note's opening sentence>
 ```
 
-Read the current `Patterns.md` first, then insert the new line in alphabetical order within the correct category. Do not rewrite the whole file — use a targeted edit.
+Read the current `Patterns.index.md` first, then insert the new line in alphabetical order within the correct category. Do not rewrite the whole file — use a targeted edit.

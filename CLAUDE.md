@@ -15,10 +15,17 @@ docs/
   patterns/        — project-agnostic, copy-paste-ready engineering patterns
   projects/        — per-project documentation (LinkStack, Blue-Green-Deployment, Sentry-POC)
     <Project>/
-      <Project>.md          — index note
-      Architecture.md       — structure, layer map, key constraints
-      Modules/              — per-module notes
-      Patterns/             — project-specific pattern applications
+      <Project>.index.md        — index note
+      <Project>-Architecture.md — structure, layer map, key constraints
+      Modules/                  — per-module notes
+      Patterns/                 — project-specific pattern applications
+      Spec-Kit/                 — SpecKit feature summaries
+  testing/         — testing strategy and patterns
+  documentation/   — docs standards (ADRs, arc42, coding guidelines)
+  db/              — PostgreSQL tooling, AI readonly user setup, query protocol
+  okf/             — Open Knowledge Format spec reference
+  speckit/         — SpecKit / spec-driven development notes and extensions
+  writing/         — drafts and ideas for posts
 ```
 
 ## Knowledge Format
@@ -27,16 +34,18 @@ All notes in this vault follow the **Open Knowledge Format (OKF) v0.1** spec. Ev
 
 Key rules:
 - Every `.md` file (except `index.md` and `log.md`) must have a YAML frontmatter block with a non-empty `type` field
-- `index.md` / `*.index.md` — directory listing only, no frontmatter
+- `*.index.md` — directory listing; this vault gives it `type: Index` frontmatter (see README)
 - `log.md` — chronological change history, newest entry first, dates in `YYYY-MM-DD`
 - Cross-links use Obsidian wiki-link syntax `[[NoteTitle]]` (bundle-relative, stable across moves)
+- Note file names must be unique across the vault so `[[NoteTitle]]` never needs a path — prefix a project-specific note with the project name when a generic note of the same name exists (e.g. `LinkStack-Architecture`)
+- No Markdown content outside `docs/` other than `README.md` and `CLAUDE.md`
 
 ## Authoring Conventions
 
-- **Frontmatter:** every note starts with `---\ntags: [...]\n---`
+- **Frontmatter:** every note starts with `---\ntype: <Type>\ntags: [...]\n---` (`type` is required, e.g. Pattern, Guide, Module, Index, Log)
 - **Internal links:** use Obsidian wiki-link syntax `[[NoteTitle]]` — never Markdown `[text](path.md)` links for cross-note references
 - **Note structure:** what the pattern/concept is → when to use it → minimal implementation → trade-offs
-- **Index notes** (e.g. `Patterns.md`, `LinkStack.md`) list child notes as `[[WikiLinks]]` grouped by category; they do not duplicate content from child notes
+- **Index notes** (e.g. `Patterns.index.md`, `LinkStack.index.md`) list child notes as `[[WikiLinks]]` grouped by category; they do not duplicate content from child notes
 
 ## Primary Project Documented: LinkStack
 
@@ -49,7 +58,7 @@ Key architectural rules captured in the docs:
 - No business logic in Web endpoints; no raw `Exception`; no direct EF entity mutation
 - Integration tests use Testcontainers (real PostgreSQL + RabbitMQ) — never mock the database
 
-See `docs/projects/LinkStack/Architecture.md` for the full layer map and constraints.
+See `docs/projects/LinkStack/LinkStack-Architecture.md` for the full layer map and constraints.
 
 ## Git Commits
 
