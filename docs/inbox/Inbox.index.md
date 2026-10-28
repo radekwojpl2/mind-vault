@@ -33,8 +33,7 @@ updated: <YYYY-MM-DD>
 
 ## Waiting
 
-- [[2026-10-28-linkstack-constitution]] — distil the LinkStack SpecKit constitution into the vault
-- [[2026-10-28-demo-database-setup]] — document the local demo DB; check the read-only grant scope
+*Empty.*
 
 ## Reference
 
