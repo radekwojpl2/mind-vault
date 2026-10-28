@@ -40,6 +40,7 @@ All notes in this vault follow the **Open Knowledge Format (OKF) v0.1** spec. Ev
 
 Key rules:
 - Every `.md` file (except `index.md` and `log.md`) must have a YAML frontmatter block with a non-empty `type` field
+- Concept notes (everything except `*.index.md` and `log.md`) also carry `status`, `confidence`, `source` and `updated` — see [[Vault-Profile]] (`docs/okf/Vault-Profile.md`). On a meaningful edit, bump `updated`; mark drift with `status: outdated`
 - `*.index.md` — directory listing; this vault gives it `type: Index` frontmatter (see README)
 - `log.md` — chronological change history, newest entry first, dates in `YYYY-MM-DD`
 - Cross-links use Obsidian wiki-link syntax `[[NoteTitle]]` (bundle-relative, stable across moves)
@@ -48,7 +49,7 @@ Key rules:
 
 ## Authoring Conventions
 
-- **Frontmatter:** every note starts with `---\ntype: <Type>\ntags: [...]\n---` (`type` is required, e.g. Pattern, Guide, Module, Index, Log)
+- **Frontmatter:** every note starts with `---\ntype: <Type>\ntags: [...]\n---` (`type` is required, e.g. Pattern, Guide, Module, Index, Log); concept notes add `status`, `confidence`, `source`, `updated` after `tags` — see [[Vault-Profile]]
 - **Internal links:** use Obsidian wiki-link syntax `[[NoteTitle]]` — never Markdown `[text](path.md)` links for cross-note references
 - **Note structure:** what the pattern/concept is → when to use it → minimal implementation → trade-offs
 - **Index notes** (e.g. `Patterns.index.md`, `LinkStack.index.md`) list child notes as `[[WikiLinks]]` grouped by category; they do not duplicate content from child notes

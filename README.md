@@ -50,7 +50,8 @@ All notes follow [OKF v0.1](https://github.com/GoogleCloudPlatform/knowledge-cat
 |---|---|
 | `index.md` reserved, no frontmatter | `<Name>.index.md` with `type: Index` frontmatter — allows named, linkable index per section |
 | Cross-links via `[text](path.md)` | Obsidian wiki-links `[[NoteTitle]]` — stable across moves, render as graph edges in Obsidian |
-| `timestamp` recommended | Not used |
+| `timestamp` recommended | Replaced by `updated: YYYY-MM-DD` (last meaningful change) |
+| Producer-defined keys allowed | `status`, `confidence`, `source` on every concept note — see `docs/okf/Vault-Profile.md` |
 | `title` / `description` recommended | Used selectively |
 
 ## Usage
