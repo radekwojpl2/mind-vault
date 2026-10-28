@@ -13,7 +13,7 @@ A **.NET 8 modular monolith** for managing personal and team link collections. S
 
 ## Architecture
 
-- [[Architecture]] — layer structure, module map, cross-module communication rules, startup sequence
+- [[LinkStack-Architecture]] — layer structure, module map, cross-module communication rules, startup sequence
 
 ---
 
@@ -27,12 +27,18 @@ A **.NET 8 modular monolith** for managing personal and team link collections. S
 
 ## Patterns
 
-- [[Value-Objects]] — type-safe domain primitives, factory validation, structural equality
+- [[LinkStack-Value-Objects]] — type-safe domain primitives, factory validation, structural equality
 - [[Business-Rules]] — `IBusinessRule` / `Check.Rule` / `BrokenBusinessRuleException`
 - [[CQRS]] — MediatR commands vs queries, Table Modules, Specification pattern
 - [[Outbox]] — MassTransit EF outbox, guaranteed event delivery, deduplication
 - [[Tenant-Isolation]] — EF query filters, schema-per-module, `IgnoreQueryFilters` for admin
 - [[Error-Handling]] — typed exception hierarchy, ErrorCodes, RFC 7807 Problem Details
+
+---
+
+## Specs
+
+- [[url-shortener-custom-domains]] — 007: short URLs, vanity aliases, premium custom domains (draft)
 
 ---
 
