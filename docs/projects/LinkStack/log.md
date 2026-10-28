@@ -6,6 +6,13 @@ tags: [log, linkstack]
 # LinkStack — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 4 (navigation fixes from vault test run 1)
+
+- Added: [[LinkStack-Adding-A-Module]] — checklist guide (test Q1 friction)
+- Modified: [[LinkStack.index]] — Guides section (module guide, testing path); each pattern links its generic version
+- Modified: [[Outbox]] — deduplication doesn't replace idempotent consumers
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 4 (fixes from vault test run 1, checked against LinkStack `master`)
 
 - Modified: [[LinkStack-Architecture]] — cross-module references: `Public.Client` (sync) **and** `IntegrationEvents` (async); Imports marked as designed-only

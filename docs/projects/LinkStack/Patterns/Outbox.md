@@ -47,6 +47,8 @@ builder.AddOutboxMessageEntity();
 
 `DuplicateDetectionWindow = 30 minutes` — if the same message is submitted twice within 30 minutes (e.g. due to a retry), MassTransit will drop the duplicate before delivery. Message IDs are deterministic per event.
 
+This reduces duplicates but doesn't remove them. Delivery is still **at-least-once** (for example a redelivery after the window, or a consumer that fails after its side effect), so consumers must stay idempotent ([[Transactional-Outbox]]).
+
 ## Relationship to Unit of Work
 
 The Unit of Work pattern (`IUnitOfWork.SaveChangesAsync`) is the commit point. The outbox message is part of that same commit, so there is no window between "domain saved" and "event queued."

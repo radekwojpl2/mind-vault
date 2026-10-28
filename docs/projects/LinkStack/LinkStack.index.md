@@ -34,12 +34,21 @@ A **.NET 8 modular monolith** for managing personal and team link collections. S
 
 ## Patterns
 
-- [[LinkStack-Value-Objects]] — type-safe domain primitives, factory validation, structural equality
-- [[Business-Rules]] — `IBusinessRule` / `Check.Rule` / `BrokenBusinessRuleException`
-- [[CQRS]] — MediatR commands vs queries, Table Modules, Specification pattern
-- [[Outbox]] — MassTransit EF outbox, guaranteed event delivery, deduplication
-- [[Tenant-Isolation]] — EF query filters, schema-per-module, `IgnoreQueryFilters` for admin
-- [[Error-Handling]] — typed exception hierarchy, ErrorCodes, RFC 7807 Problem Details
+LinkStack's own application of each pattern. The generic version is in brackets. When they differ, the LinkStack note wins for LinkStack questions.
+
+- [[LinkStack-Value-Objects]] — type-safe domain primitives, factory validation, structural equality ([[Value-Objects]])
+- [[Business-Rules]] — `IBusinessRule` / `Check.Rule` / `BrokenBusinessRuleException` ([[Business-Rule-Engine]])
+- [[CQRS]] — MediatR commands vs queries, Table Modules, Specification pattern ([[CQRS-MediatR]], [[Specification]])
+- [[Outbox]] — MassTransit EF outbox, guaranteed event delivery, deduplication ([[Transactional-Outbox]])
+- [[Tenant-Isolation]] — EF query filters, schema-per-module, `IgnoreQueryFilters` for admin ([[EF-Core-Global-Query-Filters]])
+- [[Error-Handling]] — typed exception hierarchy, ErrorCodes, RFC 7807 Problem Details ([[Typed-Exceptions-Problem-Details]])
+
+---
+
+## Guides
+
+- [[LinkStack-Adding-A-Module]] — checklist: projects, allowed references, schema, registration, tests
+- Testing a LinkStack feature: [[Test-Strategy]] → [[Integration-Tests]] / [[BDD-Tests]] (Testcontainers, never mock the database)
 
 ---
 
