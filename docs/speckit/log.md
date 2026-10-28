@@ -6,6 +6,9 @@ tags: [log, speckit]
 # SpecKit — Change Log
 
 ## 2026-10-28
+* **Translated**: [[Spec-Driven-Development]] from Polish to English (English-only rule from [[Vault-Purpose]]).
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 3 (metadata backfill)
 
 - Modified: all concept notes — added `status`, `confidence`, `source`, `updated` per [[Vault-Profile]]; `updated` taken from the last content commit (frontmatter-only and link-fix commits ignored)
