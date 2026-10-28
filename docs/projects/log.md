@@ -6,6 +6,13 @@ tags: [log, projects]
 # Projects — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 4 (fixes from vault test run 1, checked against LinkStack `master`)
+
+**LinkStack** — Modified: [[LinkStack-Architecture]], [[Analytics]], [[LinkStack-Context]], [[LinkStack-Board]]
+
+**Sentry-POC** — Modified: [[Sentry-POC-Context]], [[Sentry-POC-Board]]
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 3 (metadata backfill)
 
 **All projects** — Modified: every concept note gained `status`, `confidence`, `source`, `updated` ([[Vault-Profile]])

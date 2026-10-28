@@ -26,7 +26,7 @@ Where LinkStack work stands. Items link to the vault note, spec, PR or issue tha
 ## Planned
 
 - [ ] **007 URL shortener with custom domains.** Spec drafted and clarified; next step is `/speckit-plan`. See [[url-shortener-custom-domains]].
-- [ ] **Document the Imports module** (MassTransit saga). Missing from the vault.
+- [ ] **Imports module** (MassTransit saga). Designed in the LinkStack repo (`M-04`, ADR-016), not implemented on `master`. Summarise it in the vault once it's built.
 - [ ] **Document LinkStackPortal** (frontend). Missing from the vault.
 
 ## Implemented
@@ -34,9 +34,10 @@ Where LinkStack work stands. Items link to the vault note, spec, PR or issue tha
 - **v1.7.0 (2026-05-17)**: clearer error for get-link-by-id (spec `003-fix-link-error-msg`); SpecKit finalize skill with a BDD coverage check
 - **v1.6.0 (2026-05-09)**: persisted user settings (jsonb) with SpecFlow tests; Links module refactored to value objects (spec `001-refactor-links`, see [[LinkStack-Value-Objects]])
 - **v1.5.0 (2026-05-06)**: group colour and icon; event details per link and group; new analytics endpoint; "friends since" on org members
+- **v1.4.0 (2026-04-22)**: Sentry wired in (`Sentry.AspNetCore`, `IObservabilityService`). Off by default: the v1.4.0 changelog lists both "add Sentry integration" and "removed sentry", but `master` (checked 2026-10-28) still references `Sentry.AspNetCore` 6.4.1 and ships an empty `Sentry:Dsn`, so Sentry is wired in but stays off until a DSN is set. See [[Sentry-POC.index]]
 - **v1.1.0–v1.3.0 (2026-04-19/20)**: CI/CD with semantic-release, Docker registry, code analysis, guidelines review workflow
 - **v1.0.0 and earlier**: modules [[Users]], [[Links]], [[Analytics]]; Auth0 webhook provisioning ([[Authentication]]); tenant support ([[Tenant-Isolation]]); AI tag suggestions; read/write split with Specification pattern ([[CQRS]]); exception middleware ([[Error-Handling]]); Chrome extension with two-way sync; health checks
 
 ## Archived
 
-- **Sentry in LinkStack.** Added and then removed in v1.4.0 (2026-04-22). The working setup lives in [[Sentry-POC.index]].
+- Nothing.

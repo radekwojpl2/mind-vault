@@ -55,6 +55,6 @@ Other local repos under `D:\git` (not yet documented here): `aspire-showcase`, `
 
 - **Knowledge lookup order:** this vault first, then the project's source code, then the project's internal docs.
 - Integration tests use Testcontainers with real infrastructure — never mock the database ([[Testcontainers]]).
-- Modular monolith rules (separate schemas, no cross-module references except `Public.Client`, async events via outbox) — see [[Modular-Monolith]].
+- Modular monolith rules (separate schemas, cross-module references only to `<Module>.Public.Client` (sync) and `<Module>.IntegrationEvents` (async contracts), events via outbox) — see [[Modular-Monolith]].
 - Git: never add `Co-Authored-By: Claude` trailers; update the touched sections' `log.md` before committing.
 - Outward actions (push, PRs, issues) need explicit approval each time.

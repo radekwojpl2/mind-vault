@@ -6,6 +6,11 @@ tags: [log, sentry-poc]
 # Sentry-POC — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 4 (fixes from vault test run 1, checked against LinkStack `master`)
+
+- Modified: [[Sentry-POC-Context]], [[Sentry-POC-Board]] — corrected the LinkStack Sentry status
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 3 (metadata backfill)
 
 - Modified: all concept notes — added `status`, `confidence`, `source`, `updated` per [[Vault-Profile]]; `updated` taken from the last content commit (frontmatter-only and link-fix commits ignored)

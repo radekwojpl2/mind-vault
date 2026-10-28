@@ -6,6 +6,11 @@ tags: [log, context]
 # Context — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 4 (fixes from vault test run 1, checked against LinkStack `master`)
+
+- Modified: [[Global]] — modular-monolith principle now allows `IntegrationEvents` contracts alongside `Public.Client`
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 4 (knowledge skill)
 
 - Added: `knowledge` skill (`.claude/skills/knowledge/SKILL.md`) — answer, capture, triage, add/update, maintenance; replaces `/new-pattern`
