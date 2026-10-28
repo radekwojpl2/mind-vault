@@ -6,6 +6,12 @@ tags: [log, sentry-poc]
 # Sentry-POC — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 2 (boards)
+
+- Added: [[Sentry-POC-Board]]
+- Modified: [[Sentry-POC.index]] — board link
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 2 (project context)
 
 - Added: [[Sentry-POC-Context]] — purpose, coverage, code location

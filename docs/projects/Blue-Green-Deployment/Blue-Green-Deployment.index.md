@@ -14,6 +14,7 @@ A **.NET 8 Minimal API** proof-of-concept for zero-downtime deployments on **Azu
 ## Start Here
 
 - [[Blue-Green-Deployment-Context]] — why the POC exists, what it proves, reading order
+- [[Blue-Green-Deployment-Board]] — implemented / active / planned / archived work
 
 ## What It Demonstrates
 
