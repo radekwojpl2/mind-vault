@@ -14,9 +14,9 @@ Notes and source for SpecKit extensions and customisations maintained in this va
 
 * [spec-kit-custom-rbajor](spec-kit-custom-rbajor/) - Finalize & Knowledge Capture extension (id `custom`); adds `/speckit-custom-finalize-summary` to summarize a feature into the vault. See its [README](spec-kit-custom-rbajor/README.md).
 
-## Other
+## Guides
 
-* [custom-steps](custom-steps/) - Custom SpecKit step notes
+* [[Spec-Driven-Development]] - SDD methodology and the SpecKit command workflow, step by step
 
 ## Reference
 
