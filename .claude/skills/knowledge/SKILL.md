@@ -40,7 +40,7 @@ For each capture:
 2. **Merge** into an existing note when one covers the topic. Grep first. Create a new note only when nothing fits.
 3. Set real metadata on the result: `source` from the capture, `confidence` by how well it's backed, `updated` to today.
 4. Link the result from its section index, plus related notes where it helps.
-5. Delete the capture, and log where it went in the target section's `log.md`.
+5. Delete the capture, and log where it went in the target section's `log.md`. Refer to a deleted note as `code`, not a `[[link]]`, because the validator rejects links to missing notes.
 6. Leave anything you can't place in the inbox, and say why in the PR.
 
 ## 4. Add or Update a Note
