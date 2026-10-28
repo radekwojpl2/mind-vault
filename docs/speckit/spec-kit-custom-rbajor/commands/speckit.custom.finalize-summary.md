@@ -44,31 +44,52 @@ Summarize the current feature's work and persist it to the second brain at
    rather than guessing. Do not create a new top-level `projects` directory at the
    vault root — summaries live under `docs\projects\`.
 
-6. **Save the summary** to
-   `D:\git\mind-vault\docs\projects\<Project>\<feature-name>-summary.md`.
-   The summary must conform to OKF: start with a `---` frontmatter block carrying a
-   non-empty `type` (e.g. `type: Summary`) and `tags`. Overwrite an existing summary
-   for the same feature (it is the latest authoritative snapshot).
+6. **Branch the vault.** In `D:\git\mind-vault`, start from an up-to-date `main` and
+   create `speckit/<feature-name>`. Vault changes only reach `main` through a PR
+   (see the vault's `CLAUDE.md`). Never commit to `main` directly.
 
-7. **Append a log entry.** Add a one-line entry, newest first, to the project's
-   `D:\git\mind-vault\docs\projects\<Project>\log.md` with today's date and the
-   feature name, e.g.:
+7. **Save the summary** to
+   `D:\git\mind-vault\docs\projects\<Project>\Spec-Kit\<feature-name>.md`, overwriting
+   an existing summary for the same feature (it is the latest authoritative snapshot).
+   Frontmatter must follow the vault profile (`docs/okf/Vault-Profile.md`): `type:
+   Spec-Summary`, `tags`, `feature`, `status` (`draft` until the feature is implemented,
+   then `stable`), `confidence: high` (you just read the spec and code), `source` (the
+   project repo URL) and `updated` (today). Note names must be unique across the vault,
+   so don't add a `-summary` suffix, and check that no other note has the same name.
+
+8. **Link it.** Under `## Specs` in `docs\projects\<Project>\<Project>.index.md`, add or
+   update `- [[<feature-name>]] — <###>: <one-line goal> (<status>)`. Move or add the
+   feature on `docs\projects\<Project>\<Project>-Board.md` (Planned → Active →
+   Implemented).
+
+9. **Append a log entry** to the project's `docs\projects\<Project>\log.md`, newest
+   first, using the vault's heading format:
 
    ```text
-   - 2026-06-29 — <feature-name>: <one-line goal>
+   ## <YYYY-MM-DD>
+   - Added: [[<feature-name>]] — <one-line goal>        (or "Modified:" when updating)
    ```
 
    Create `log.md` (OKF `type: Log`) if it does not exist.
 
-8. **Confirm what was saved and where.** Report the absolute path of the summary
-   file written and the log line appended.
+10. **Validate, commit and open a PR.** Run `node scripts/validate-vault.js` in the
+    vault (it must print `OK`), commit with no `Co-Authored-By` trailer, then ask the
+    user before pushing and opening a PR titled `SpecKit: <feature-name> summary`.
+
+11. **Confirm what was saved and where.** Report the summary path, the index, board and
+    log changes, and the PR link (or that it's waiting for the user to approve the push).
 
 ## Summary Template
 
 ```markdown
 ---
-type: Summary
-tags: [summary, <project>, <feature-name>]
+type: Spec-Summary
+tags: [<project>, spec-kit, <module>, feature]
+feature: <###-feature-name>
+status: <draft | stable>
+confidence: high
+source: [<project repo URL>]
+updated: <YYYY-MM-DD>
 ---
 
 # <feature-name> — Summary

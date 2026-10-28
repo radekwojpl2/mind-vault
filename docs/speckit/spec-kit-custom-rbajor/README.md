@@ -1,4 +1,4 @@
- # Finalize & Knowledge Capture Extension
+# Finalize & Knowledge Capture Extension
 
 Summarize completed Spec Kit work and persist it to the **mind-vault** second brain
 at `D:\git\mind-vault`, keeping the vault the authoritative record of project
@@ -11,10 +11,13 @@ knowledge-base entry:
 
 - Reads the current feature's `spec.md`, `plan.md`, and `tasks.md`
 - Reads the project constitution to report compliance and deviations
-- Writes a structured, OKF-conformant summary to
-  `D:\git\mind-vault\docs\projects\<Project>\<feature-name>-summary.md`
-- Appends a dated one-line entry to that project's
-  `D:\git\mind-vault\docs\projects\<Project>\log.md`
+- Writes a structured summary that follows the vault profile (`type: Spec-Summary`,
+  `status`, `confidence`, `source`, `updated`) to
+  `D:\git\mind-vault\docs\projects\<Project>\Spec-Kit\<feature-name>.md`
+- Links it from the project's `<Project>.index.md` (Specs) and `<Project>-Board.md`
+- Adds a dated `## YYYY-MM-DD` entry to that project's `log.md`
+- Works on a `speckit/<feature-name>` branch in the vault, runs the vault validator, and
+  opens a PR after you approve the push. It never commits to the vault's `main`
 
 ## Commands
 
@@ -51,6 +54,7 @@ config:
   defaults:
     vault_path: "D:\\git\\mind-vault"
     projects_subdir: "docs\\projects"
+    specs_subdir: "Spec-Kit"
     log_file: "log.md"
 ```
 
