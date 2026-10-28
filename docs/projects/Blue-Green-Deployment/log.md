@@ -6,6 +6,12 @@ tags: [log, blue-green-deployment]
 # Blue-Green-Deployment — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 2 (boards)
+
+- Added: [[Blue-Green-Deployment-Board]]
+- Modified: [[Blue-Green-Deployment.index]] — board link
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 2 (project context)
 
 - Added: [[Blue-Green-Deployment-Context]] — purpose, what the POC proves, reading order

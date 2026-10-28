@@ -13,7 +13,7 @@ Personal engineering knowledge base: reusable patterns, per-project documentatio
 
 1. [[Global]] — who owns this vault, the machine, repos, tools and standing principles. Read this first.
 2. Pick the section below that matches the question, open its index, follow `[[links]]`.
-3. For a project question, read the project index **and** its big-picture notes before diving into modules.
+3. For a project question, read the project index, then its `<Project>-Context` (big picture) and `<Project>-Board` (what's done, in progress, planned) before diving into modules.
 
 ## Sections
 

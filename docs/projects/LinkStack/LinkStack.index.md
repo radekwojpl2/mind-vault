@@ -14,6 +14,7 @@ A **.NET 8 modular monolith** for managing personal and team link collections. S
 ## Start Here
 
 - [[LinkStack-Context]] — purpose, feature map, where the code lives, glossary, known gaps
+- [[LinkStack-Board]] — implemented / active / planned / archived work
 
 ---
 

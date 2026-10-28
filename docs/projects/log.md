@@ -6,6 +6,11 @@ tags: [log, projects]
 # Projects — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 2 (boards)
+
+**All projects** — Added: [[LinkStack-Board]], [[Blue-Green-Deployment-Board]], [[Sentry-POC-Board]]
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 2 (project context)
 
 **All projects** — Added: [[LinkStack-Context]], [[Blue-Green-Deployment-Context]], [[Sentry-POC-Context]] and a Start Here link in each project index

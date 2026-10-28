@@ -14,6 +14,7 @@ A proof-of-concept demonstrating **full-stack Sentry observability** across a .N
 ## Start Here
 
 - [[Sentry-POC-Context]] — why the POC exists, what it covers, where the code lives
+- [[Sentry-POC-Board]] — implemented / active / planned / archived work
 
 ---
 
