@@ -6,6 +6,12 @@ tags: [log, blue-green-deployment]
 # Blue-Green-Deployment — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 2 (project context)
+
+- Added: [[Blue-Green-Deployment-Context]] — purpose, what the POC proves, reading order
+- Modified: [[Blue-Green-Deployment.index]] — Start Here section
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 1 (unique note names, link clean-up)
 
 - Renamed: `Architecture` → [[Blue-Green-Deployment-Architecture]], `Patterns/Expand-Contract` → [[Blue-Green-Deployment-Expand-Contract]]

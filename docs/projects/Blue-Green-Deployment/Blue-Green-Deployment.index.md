@@ -11,6 +11,10 @@ A **.NET 8 Minimal API** proof-of-concept for zero-downtime deployments on **Azu
 
 **Repo:** `D:\git\blue-green-deployment-poc`
 
+## Start Here
+
+- [[Blue-Green-Deployment-Context]] — why the POC exists, what it proves, reading order
+
 ## What It Demonstrates
 
 - Blue-green slot switching on Azure Container Apps using labeled revisions and traffic weights
