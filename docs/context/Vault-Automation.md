@@ -1,8 +1,8 @@
 ---
 type: Guide
 title: Vault Automation
-description: "How the vault maintains itself: validation, weekly maintenance, event-driven updates, and how to set them up"
-tags: [context, automation, github-actions, maintenance, events, knowledge-management]
+description: "How the vault maintains itself: validation, plus a daily Claude Code routine for board sync, inbox triage and weekly maintenance"
+tags: [context, automation, routines, github-actions, maintenance, knowledge-management]
 status: draft
 confidence: medium
 source: [author, conversation, course:MEGA.dev S01E03]
@@ -15,57 +15,37 @@ The self-management part of [[MEGA-S01E03-Building-Knowledge-Systems]], put into
 
 | Mechanism | Trigger | What it does | State |
 |---|---|---|---|
-| Pre-commit hook (`.githooks/pre-commit`) | local commit touching `docs/**/*.md` | runs `scripts/validate-vault.js` and blocks the commit on failure | **active** on the owner's clone |
-| `Validate vault` workflow | every PR, push to `main` | the same validator in CI | **active** |
-| `Vault maintenance` workflow | Mondays 06:00 UTC, or manual | the knowledge skill's §5: validate, triage the inbox, re-check stale notes and boards, detect new repos → one PR | **inert** until secrets are set |
-| `Vault event` workflow | `repository_dispatch` `source-pr-merged` from a project repo | decides whether a merged PR changes the vault, usually a board move → PR | **inert** until secrets are set and senders are added |
+| Pre-commit hook (`.githooks/pre-commit`) | local commit touching `docs/**/*.md` | runs `scripts/validate-vault.js`; blocks the commit on failure | active on the owner's clone (`git config core.hooksPath .githooks`) |
+| `Validate vault` GitHub Action | every PR, push to `main` | the same validator in CI | active |
+| **Claude Code routine "mind-vault daily sync"** | daily 06:00 UTC (07:00 Warsaw in winter, 08:00 in summer) | **daily:** merged PRs and new releases in the project repos → boards; inbox triage. **Mondays:** full maintenance (validator, stale notes, new repos in [[Global]]) → one PR | active (owner-managed at claude.ai/code/routines) |
 
-This is `status: draft` because the two agent workflows haven't run yet. Set it to `stable` after the first successful run.
+This note stays `status: draft` until the routine's first PR has been reviewed.
 
-## Setup (owner)
+## Why a Routine, Not GitHub Actions
 
-1. **Anthropic API key:** add the repo secret `ANTHROPIC_API_KEY` to `radekwojpl2/mind-vault` (Settings → Secrets and variables → Actions). Without it, both agent workflows log "skipping" and exit.
-2. **Read token for source repos:** LinkStack is **private**, so the agent needs a fine-grained PAT with **read-only** *Contents*, *Pull requests*, *Issues* and *Metadata* on `LinkStack`, `blue-green-deployment-poc` and `dotnet-nextjs-sentry-poc`. Store it as `VAULT_SOURCE_READ_TOKEN`. Writes to the vault itself use the workflow's own `GITHUB_TOKEN`.
-3. **Let Actions open PRs:** Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
-4. **Try it:** Actions → *Vault maintenance* → *Run workflow*. Review the PR it opens.
+The owner chose a scheduled Claude Code cloud agent (2026-10-28):
+- no Anthropic API key stored in GitHub
+- no sender workflows in the project repos
 
-## Event Senders (one per project repo)
+Routines can't be triggered by GitHub events, so merged PRs are picked up by the **daily** run rather than instantly. The cost is that a board lags by up to a day.
 
-Add this workflow to each project repo. It needs a secret `MIND_VAULT_DISPATCH_TOKEN`: a fine-grained PAT on `mind-vault` with *Contents: read and write*, which the dispatch API requires.
+## How "Since Last Run" Works
 
-```yaml
-# .github/workflows/notify-mind-vault.yml
-name: Notify mind-vault
-on:
-  pull_request:
-    types: [closed]
-    branches: [master, main]
-jobs:
-  notify:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    steps:
-      - env:
-          GH_TOKEN: ${{ secrets.MIND_VAULT_DISPATCH_TOKEN }}
-          REPO: ${{ github.repository }}
-          PR: ${{ github.event.pull_request.number }}
-        run: |
-          gh api repos/radekwojpl2/mind-vault/dispatches \
-            -f event_type=source-pr-merged \
-            -f "client_payload[repo]=$REPO" \
-            -f "client_payload[pr]=$PR"
-```
+Each project board starts with `Snapshot from <YYYY-MM-DD>`. The routine treats that date as the watermark. It looks for PRs merged and releases published since then, updates the board, and moves the snapshot date forward. If nothing changed, it opens no PR.
 
-The payload carries only the repo and PR number. The vault agent reads the PR itself with the read token, so no PR text passes through the dispatch.
+## Repos the Routine Checks Out
 
-## New Repositories
+- `radekwojpl2/mind-vault` (writes, through PRs)
+- `radekwojpl2/LinkStack` (private, read only)
+- `radekwojpl2/blue-green-deployment-poc` (read only)
+- `radekwojpl2/dotnet-nextjs-sentry-poc` (read only)
 
-GitHub has no repository-level "repo created" event. The weekly maintenance run compares `gh repo list radekwojpl2` with the Repositories table in [[Global]] instead, and adds new repos as "not yet documented".
+## Managing It
+
+- Pause, edit or delete it at <https://claude.ai/code/routines>, or ask Claude Code (`/schedule`).
+- The routine's prompt is self-contained. It points the agent at `CLAUDE.md` and `.claude/skills/knowledge/SKILL.md`, so vault rules change through those files, not by editing the routine.
 
 ## Safety
 
-- **PRs only.** The agents work on `maintenance/<date>` or `event/<repo>-pr-<n>` branches. The `Validate vault` check must pass before the owner merges.
-- **Least privilege.** The source token is read-only, and the dispatch token is scoped to the vault repo.
-- **The vault is public** (`radekwojpl2/mind-vault`) while LinkStack is private. The agent prompts forbid copying secrets or private source code, and private-repo facts stay at the level already in `projects/LinkStack/`.
-- Both agent workflows share a concurrency group, so they never edit the vault at the same time.
-- Cost: one agent run a week, plus one per merged PR in the source repos.
+- **PRs only.** The `Validate vault` check must pass before the owner merges.
+- The vault is **public** (owner's decision, 2026-10-28) and LinkStack is private. Notes summarise private-repo facts at the existing level and never copy secrets or source code.
