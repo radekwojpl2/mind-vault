@@ -4,7 +4,7 @@ tags: [pattern, migrations, database, expand-contract, zero-downtime, blue-green
 status: stable
 confidence: medium
 source: [author, https://github.com/radekwojpl2/blue-green-deployment-poc]
-updated: 2026-05-31
+updated: 2026-10-28
 ---
 
 # Expand/Contract
@@ -72,6 +72,14 @@ UPDATE orders SET customer_name = client_name WHERE customer_name IS NULL;
 ```
 
 Old version still writes to `client_name`. New version reads `customer_name` (backfilled for existing rows).
+
+**Step 2b — Catch-up backfill:** run the same idempotent backfill again in the *next* deploy, before contracting
+
+```sql
+UPDATE orders SET customer_name = client_name WHERE customer_name IS NULL;
+```
+
+Migrations usually run before the new version takes traffic, so the old version keeps writing `client_name` until cutover. Rows written in that window miss the first backfill. The `WHERE ... IS NULL` makes the re-run safe.
 
 **Step 3 — Contract:** drop the old column after old version is retired
 
