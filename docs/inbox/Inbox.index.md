@@ -33,9 +33,7 @@ updated: <YYYY-MM-DD>
 
 ## Waiting
 
-- [[2026-10-28-bgd-rename-note-drift]] — the blue-green rename note disagrees with the real migrations
-- [[2026-10-28-ai-migration-review-drift]] — model, output format and `HEAD~1` push gap
-- [[2026-10-28-expand-contract-catch-up-backfill]] — add the catch-up backfill step to Expand-Contract
+*Empty.*
 
 ## Reference
 
