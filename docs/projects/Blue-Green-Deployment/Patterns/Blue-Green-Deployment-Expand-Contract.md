@@ -5,7 +5,7 @@ tags: [blue-green-deployment, pattern, migrations, postgresql, expand-contract]
 
 # Expand/Contract — EF Core Implementation
 
-See [[patterns/Expand-Contract]] for the generic pattern.
+See [[Expand-Contract]] for the generic pattern.
 
 ## Implementation in This POC
 
@@ -44,9 +44,9 @@ migrationBuilder.DropColumn(
 
 ## Enforcement
 
-[[Blue-Green-Deployment/Patterns/AI-Migration-Review]] blocks unsafe single-step operations (like a bare `RenameColumn`) in CI before they can reach the deploy pipeline.
+[[AI-Migration-Review]] blocks unsafe single-step operations (like a bare `RenameColumn`) in CI before they can reach the deploy pipeline.
 
 ## Related
 
-- [[Blue-Green-Deployment/Architecture]]
-- [[Blue-Green-Deployment/Pipelines]]
+- [[Blue-Green-Deployment-Architecture]]
+- [[Pipelines]]

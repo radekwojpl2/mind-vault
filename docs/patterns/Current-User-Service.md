@@ -121,4 +121,4 @@ var handler = new CreateOrderCommandHandler(
 
 - [[CQRS-MediatR]] — handlers inject ICurrentUserService to get the caller's identity
 - [[EF-Core-Global-Query-Filters]] — TenantId from ICurrentUserService feeds into DbContext query filters
-- [[projects/LinkStack/Authentication]] — LinkStack's full implementation with PersonalContext / OrganizationContext
+- [[Authentication]] — LinkStack's full implementation with PersonalContext / OrganizationContext

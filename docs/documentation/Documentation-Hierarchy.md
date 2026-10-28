@@ -45,7 +45,7 @@ Every significant technical choice gets an [[ADRs|ADR]]: why was this decision m
 
 ## Layer 3 — Module Documentation
 
-One document per module (or bounded context) in a modular/DDD project. Describes the module's purpose, aggregates, events it publishes and consumes, and cross-module dependencies. See [[projects/LinkStack/Modules/Links]] for an example.
+One document per module (or bounded context) in a modular/DDD project. Describes the module's purpose, aggregates, events it publishes and consumes, and cross-module dependencies. See [[Links]] for an example.
 
 **Lives in:** `docs/modules/`
 

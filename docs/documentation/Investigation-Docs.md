@@ -115,4 +115,4 @@ Prefix with `AI-{NN}` (or `INV-{NN}`) and a descriptive slug. File alongside the
 
 ## Real-World Example
 
-- `docs/ai-investigation/AI-01-auth0-poc.md` in LinkStack — 650-line deep-dive with TypeScript and C# samples that directly supported [[ADR-013]]
+- `docs/ai-investigation/AI-01-auth0-poc.md` in LinkStack — 650-line deep-dive with TypeScript and C# samples that directly supported `ADR-013` (in LinkStack `docs/decisions/`)

@@ -88,4 +88,4 @@ Fixes:
 
 ## Real-World Example
 
-- [[projects/Blue-Green-Deployment/Patterns/AI-Migration-Review]] — Claude reviews EF Core migration files against expand/contract rules; blocks `RenameColumn`, `AddColumn NOT NULL`, and other unsafe operations before merge
+- [[AI-Migration-Review]] — Claude reviews EF Core migration files against expand/contract rules; blocks `RenameColumn`, `AddColumn NOT NULL`, and other unsafe operations before merge

@@ -138,7 +138,7 @@ See [[Vertical-Slices]] for the project-agnostic guide.
 
 ## Related Patterns
 
-- [[Value-Objects]] — type-safe domain primitives
+- [[LinkStack-Value-Objects]] — type-safe domain primitives
 - [[Business-Rules]] — domain invariant validation
 - [[CQRS]] — command/query separation via MediatR
 - [[Outbox]] — reliable async event delivery

@@ -150,4 +150,4 @@ Solution/
 
 ## Real-World Example
 
-- [[projects/LinkStack/Architecture]] — Users / Links / Analytics modules, project reference rules, `Users.Public.Client` pattern
+- [[LinkStack-Architecture]] — Users / Links / Analytics modules, project reference rules, `Users.Public.Client` pattern

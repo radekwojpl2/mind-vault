@@ -137,4 +137,4 @@ builder.Property(o => o.Email)
 
 ## Real-World Example
 
-- [[projects/LinkStack/Patterns/Value-Objects]] — `Url`, `LinkTitle`, `TagName`, `UserId`, `TenantId`
+- [[LinkStack-Value-Objects]] — `Url`, `LinkTitle`, `TagName`, `UserId`, `TenantId`

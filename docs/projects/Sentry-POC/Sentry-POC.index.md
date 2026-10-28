@@ -13,7 +13,7 @@ A proof-of-concept demonstrating **full-stack Sentry observability** across a .N
 
 ## Architecture
 
-- [[Architecture]] — service layout, CORS, containerization, deployment (DigitalOcean App Platform)
+- [[Sentry-POC-Architecture]] — service layout, CORS, containerization, deployment (DigitalOcean App Platform)
 
 ---
 

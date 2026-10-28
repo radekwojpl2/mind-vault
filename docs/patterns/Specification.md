@@ -184,4 +184,4 @@ public void ActiveOrders_ExcludesCancelled()
 
 ## Real-World Example
 
-- [[projects/LinkStack/Patterns/CQRS]] — `FriendsOfUserSpecification`, used with `IFriendshipTableModule`
+- [[CQRS]] — `FriendsOfUserSpecification`, used with `IFriendshipTableModule`

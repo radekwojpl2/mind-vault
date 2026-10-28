@@ -115,4 +115,4 @@ This graph makes it possible to understand the ripple effect of revisiting a dec
 
 ## Real-World Example
 
-- [[projects/LinkStack/Architecture]] — 19 ADRs covering modular monolith, CQRS, Auth0, MassTransit outbox, CI pipeline, and more
+- [[LinkStack-Architecture]] — 19 ADRs covering modular monolith, CQRS, Auth0, MassTransit outbox, CI pipeline, and more

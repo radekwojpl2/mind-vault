@@ -167,4 +167,4 @@ services.AddMassTransit(x =>
 
 ## Real-World Example
 
-- [[projects/LinkStack/Architecture]] — `AddUsersModule`, `AddLinksModule`, `AddAnalyticsModule` each self-register everything their module needs
+- [[LinkStack-Architecture]] — `AddUsersModule`, `AddLinksModule`, `AddAnalyticsModule` each self-register everything their module needs

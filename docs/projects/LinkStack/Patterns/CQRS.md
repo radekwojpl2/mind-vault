@@ -117,7 +117,7 @@ No business logic in the Web layer.
 
 ## Related
 
-- [[Architecture]] — layer dependency rules
-- [[Value-Objects]] — commands take value objects, not raw primitives
+- [[LinkStack-Architecture]] — layer dependency rules
+- [[LinkStack-Value-Objects]] — commands take value objects, not raw primitives
 - [[Outbox]] — how commands publish events reliably
 - [[Error-Handling]] — exceptions surface through the pipeline automatically

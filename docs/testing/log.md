@@ -5,6 +5,12 @@ tags: [log, testing]
 
 # Testing — Change Log
 
+## 2026-10-28
+> Vault refactor, issue #1 Phase 1 (unique note names, link clean-up)
+
+- Modified: [[Test-Data-Builders]] — link to [[LinkStack-Architecture]]
+- Fixed: [[Testing.index]] link in history
+
 ## 2026-06-19 · `8ac317f`
 > Add OKF type field to all note frontmatter
 
@@ -15,4 +21,4 @@ tags: [log, testing]
 ## 2026-05-31 · `cff31d8`
 > Initial commit: Obsidian knowledge vault with engineering patterns and project docs
 
-- Added: [[ASP-NET-Core-API-Testing]], [[BDD-Tests]], [[E2E-Tests]], [[Integration-Tests]], [[Test-Data-Builders]], [[Test-Strategy]], [[Testcontainers]], [[Testing]], [[Unit-Tests]]
+- Added: [[ASP-NET-Core-API-Testing]], [[BDD-Tests]], [[E2E-Tests]], [[Integration-Tests]], [[Test-Data-Builders]], [[Test-Strategy]], [[Testcontainers]], [[Testing.index]], [[Unit-Tests]]
