@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [testing, e2e, end-to-end, aspnetcore]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-05-31
 ---
 
 # End-to-End (E2E) Tests

@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [testing, bdd, specflow, gherkin, behaviour]
+status: stable
+confidence: medium
+source: [author]
+updated: 2026-05-31
 ---
 
 # BDD Tests (SpecFlow)
