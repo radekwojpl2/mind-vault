@@ -22,6 +22,10 @@ Use this exact structure:
 ---
 type: Pattern
 tags: [pattern, <lowercase-tags-relevant-to-the-pattern>]
+status: draft
+confidence: <high|medium|low>
+source: [<URL or author>]
+updated: <today, YYYY-MM-DD>
 ---
 
 # <Human Readable Pattern Name>
