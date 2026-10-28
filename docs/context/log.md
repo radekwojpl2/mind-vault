@@ -6,6 +6,12 @@ tags: [log, context]
 # Context — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 4 (knowledge skill)
+
+- Added: `knowledge` skill (`.claude/skills/knowledge/SKILL.md`) — answer, capture, triage, add/update, maintenance; replaces `/new-pattern`
+- Added: `scripts/validate-vault.js` — frontmatter, profile fields, unique names, links, orphans, log order
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 4 (structure decided)
 
 - Modified: [[Vault-Structure]] — option A chosen by the owner; status stable
