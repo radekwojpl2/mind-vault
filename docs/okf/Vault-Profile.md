@@ -50,7 +50,7 @@ A YAML list. Use the most specific value available:
 - `course:<name>`, e.g. `course:MEGA.dev S01E03`
 - `environment`: read from the local machine (commands, config)
 
-When a note distils a project repo, list the repo URL. Don't repeat a source that's already in the note's `resource` field.
+When a note distils a project repo, list the repo URL. `resource` (OKF) names the asset a note *describes*; `source` names where the *knowledge* came from. They may be the same URL.
 
 ## Rules for Agents
 
