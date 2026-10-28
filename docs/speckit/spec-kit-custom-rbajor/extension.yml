@@ -34,5 +34,5 @@ tags:
 config:
   defaults:
     vault_path: "D:\\git\\mind-vault"
-    projects_subdir: "projects"
-    changelog_file: "changelog.md"
+    projects_subdir: "docs\\projects"
+    log_file: "log.md"

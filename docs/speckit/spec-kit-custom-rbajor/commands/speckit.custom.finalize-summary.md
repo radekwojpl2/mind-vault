@@ -37,25 +37,40 @@ Summarize the current feature's work and persist it to the second brain at
    - **Deviations from the constitution and the reason**
    - **Open questions or follow-up tasks**
 
-5. **Save the summary** to `D:\git\mind-vault\projects\<feature-name>-summary.md`.
-   Create the `projects` directory if it does not exist. Overwrite an existing
-   summary for the same feature (it is the latest authoritative snapshot).
+5. **Resolve the target project.** Map the feature to the project it belongs to
+   under `D:\git\mind-vault\docs\projects\<Project>\` (e.g. `LinkStack`,
+   `Blue-Green-Deployment`, `Sentry-POC`). Match against the existing project
+   folders; if none matches, ask the user which project this feature belongs to
+   rather than guessing. Do not create a new top-level `projects` directory at the
+   vault root — summaries live under `docs\projects\`.
 
-6. **Append a changelog entry.** Add a one-line entry to
-   `D:\git\mind-vault\changelog.md` with today's date and the feature name, e.g.:
+6. **Save the summary** to
+   `D:\git\mind-vault\docs\projects\<Project>\<feature-name>-summary.md`.
+   The summary must conform to OKF: start with a `---` frontmatter block carrying a
+   non-empty `type` (e.g. `type: Summary`) and `tags`. Overwrite an existing summary
+   for the same feature (it is the latest authoritative snapshot).
+
+7. **Append a log entry.** Add a one-line entry, newest first, to the project's
+   `D:\git\mind-vault\docs\projects\<Project>\log.md` with today's date and the
+   feature name, e.g.:
 
    ```text
    - 2026-06-29 — <feature-name>: <one-line goal>
    ```
 
-   Create `changelog.md` if it does not exist.
+   Create `log.md` (OKF `type: Log`) if it does not exist.
 
-7. **Confirm what was saved and where.** Report the absolute path of the summary
-   file written and the changelog line appended.
+8. **Confirm what was saved and where.** Report the absolute path of the summary
+   file written and the log line appended.
 
 ## Summary Template
 
 ```markdown
+---
+type: Summary
+tags: [summary, <project>, <feature-name>]
+---
+
 # <feature-name> — Summary
 
 **Date**: <YYYY-MM-DD>
@@ -87,4 +102,6 @@ Summarize the current feature's work and persist it to the second brain at
 - If the mind-vault path `D:\git\mind-vault` does not exist, warn the user and stop
   rather than writing the summary elsewhere — the vault is the single source of truth.
 - If no feature directory can be resolved, ask the user which feature to summarize.
+- If the feature cannot be matched to an existing project under `docs\projects\`,
+  ask the user which project it belongs to rather than guessing.
 - If Git is unavailable, build the summary from the spec/plan/tasks documents alone.

@@ -1,4 +1,4 @@
-# Finalize & Knowledge Capture Extension
+ # Finalize & Knowledge Capture Extension
 
 Summarize completed Spec Kit work and persist it to the **mind-vault** second brain
 at `D:\git\mind-vault`, keeping the vault the authoritative record of project
@@ -11,8 +11,10 @@ knowledge-base entry:
 
 - Reads the current feature's `spec.md`, `plan.md`, and `tasks.md`
 - Reads the project constitution to report compliance and deviations
-- Writes a structured summary to `D:\git\mind-vault\projects\<feature-name>-summary.md`
-- Appends a dated one-line entry to `D:\git\mind-vault\changelog.md`
+- Writes a structured, OKF-conformant summary to
+  `D:\git\mind-vault\docs\projects\<Project>\<feature-name>-summary.md`
+- Appends a dated one-line entry to that project's
+  `D:\git\mind-vault\docs\projects\<Project>\log.md`
 
 ## Commands
 
@@ -48,8 +50,8 @@ Defaults are declared in `extension.yml`:
 config:
   defaults:
     vault_path: "D:\\git\\mind-vault"
-    projects_subdir: "projects"
-    changelog_file: "changelog.md"
+    projects_subdir: "docs\\projects"
+    log_file: "log.md"
 ```
 
 ## Installation
