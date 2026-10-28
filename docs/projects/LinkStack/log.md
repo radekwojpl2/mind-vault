@@ -6,6 +6,12 @@ tags: [log, linkstack]
 # LinkStack — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 2 (project context)
+
+- Added: [[LinkStack-Context]] — purpose, feature map, code location, glossary, known drift (open PRs #34–#41, tasks #11–#21)
+- Modified: [[LinkStack.index]] — Start Here section
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 1
 
 - Renamed: `Architecture` → [[LinkStack-Architecture]], `Patterns/Value-Objects` → [[LinkStack-Value-Objects]] (unique names; all links updated)
