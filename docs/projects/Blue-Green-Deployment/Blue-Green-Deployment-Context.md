@@ -3,6 +3,10 @@ type: Context
 title: Blue-Green Deployment POC — Project Context
 description: "Big picture for the blue-green POC: why it exists, what it proves, where the code lives"
 tags: [blue-green-deployment, context, overview, poc]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/blue-green-deployment-poc, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-10-28
 ---
 
 # Blue-Green Deployment POC — Project Context

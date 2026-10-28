@@ -1,6 +1,10 @@
 ---
 type: Pattern
 tags: [blue-green-deployment, pattern, ai, claude, migrations, ci-cd, github-actions]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/blue-green-deployment-poc]
+updated: 2026-05-31
 ---
 
 # AI Migration Review

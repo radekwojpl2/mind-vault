@@ -1,6 +1,10 @@
 ---
 type: Architecture
 tags: [blue-green-deployment, architecture, azure, container-apps, github-actions, bicep]
+status: stable
+confidence: medium
+source: [https://github.com/radekwojpl2/blue-green-deployment-poc]
+updated: 2026-05-31
 ---
 
 # Architecture

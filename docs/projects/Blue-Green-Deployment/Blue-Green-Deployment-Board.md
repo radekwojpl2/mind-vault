@@ -3,6 +3,10 @@ type: Board
 title: Blue-Green Deployment POC — Board
 description: "Status of the blue-green POC: implemented, active, planned and archived work"
 tags: [blue-green-deployment, board, kanban, status]
+status: stable
+confidence: high
+source: [https://github.com/radekwojpl2/blue-green-deployment-poc, https://github.com/radekwojpl2/LinkStack]
+updated: 2026-10-28
 ---
 
 # Blue-Green Deployment POC — Board
