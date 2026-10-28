@@ -6,6 +6,13 @@ tags: [log, context]
 # Context — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 4 (structure decided)
+
+- Modified: [[Vault-Structure]] — option A chosen by the owner; status stable
+- Modified: [[Vault-Purpose]] — content homes filled in (inbox, learning)
+- Modified: [[index]] — split into Work reference / Learning / System zones; links Inbox and Learning
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 4 (purpose and structure)
 
 - Added: [[Vault-Purpose]] — requirements from the owner (work reference + learning, readers, content, English-only, PR-only agents, 9/10 test bar and questions)

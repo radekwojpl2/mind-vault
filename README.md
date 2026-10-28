@@ -7,7 +7,8 @@ Personal Obsidian knowledge vault — engineering patterns and project documenta
 ```
 docs/
   index.md         — root entry point, links every section
-  context/         — global context (owner, environment, repos, principles)
+  inbox/           — single entry point: raw captures waiting for triage
+  context/         — global context (owner, environment, repos, principles, vault purpose/structure)
   patterns/        — project-agnostic, copy-paste-ready engineering patterns
   projects/        — per-project documentation
   testing/         — testing strategy and patterns
@@ -15,6 +16,7 @@ docs/
   db/              — PostgreSQL tooling, AI readonly user setup, query protocol
   okf/             — Open Knowledge Format spec reference
   speckit/         — SpecKit / spec-driven development notes and extensions
+  learning/        — course lesson notes (<Course>/) and research / PoC findings (research/)
   writing/         — drafts and ideas for posts
 ```
 
