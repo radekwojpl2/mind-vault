@@ -50,7 +50,9 @@ blue-green-deployment-poc/
 
 ## Related Generic Patterns
 
-- [[Expand-Contract]] (if documented)
+- [[Expand-Contract]] — generic expand/contract migration pattern
+- [[Blue-Green-Deployment]] — generic blue-green deployment pattern
+- [[AI-CI-Gate]] — generic LLM gate in CI
 
 ## Sections
 
