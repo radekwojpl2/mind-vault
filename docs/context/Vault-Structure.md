@@ -3,15 +3,15 @@ type: Decision
 title: Vault Structure — Options and Decision
 description: "Candidate layouts for the vault compared against Vault-Purpose, with a recommendation"
 tags: [context, structure, decision, knowledge-management, para, zettelkasten, diataxis, moc]
-status: draft
-confidence: medium
+status: stable
+confidence: high
 source: [author, conversation, course:MEGA.dev S01E03]
 updated: 2026-10-28
 ---
 
 # Vault Structure — Options and Decision
 
-**Status: awaiting the owner's choice.** This note covers issue #1, Phase 4, steps "Build context" and "Initialize structure". The requirements are in [[Vault-Purpose]].
+**Decided: Option A** (see [Decision](#decision)). This note covers issue #1, Phase 4, steps "Build context" and "Initialize structure". The requirements are in [[Vault-Purpose]].
 
 ## Strategies Considered
 
@@ -97,4 +97,4 @@ docs/
 
 ## Decision
 
-*Pending. Record the chosen option and date here, then set `status: stable`.*
+**2026-10-28: Option A chosen by the owner.** Implemented by adding [[Inbox.index]], [[Learning.index]] (with `MEGA-dev/` and a planned `research/`), and a root [[index]] split into Work reference / Learning / System zones. No existing files moved.

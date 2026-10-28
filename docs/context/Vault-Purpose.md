@@ -32,8 +32,8 @@ These are the requirements the vault's structure, templates and skill are design
 |---|---|
 | Engineering patterns | `patterns/`, `testing/`, `documentation/`, `db/` |
 | Project docs (context, architecture, modules, specs, boards) | `projects/<Project>/` |
-| Course and learning notes | *to be designed* |
-| Raw captures: links, bookmarks, read-later, PoC findings | *inbox, to be designed*. An agent sorts them into the vault |
+| Course and learning notes | `learning/<Course>/`, `learning/research/` |
+| Raw captures: links, bookmarks, read-later, PoC findings | `inbox/`. An agent triages them into the vault |
 | Writing drafts | `writing/` |
 
 ## Rules
@@ -57,4 +57,4 @@ A subagent that is given **only the vault** answers the test questions below. Th
 7. How do I query the local demo database as an agent, and what am I allowed to run?
 8. Where does the URL shortener feature stand, and what's the next step?
 9. What should an error response from a LinkStack endpoint look like?
-10. What did MEGA S01E03 say about grep versus semantic search, and which one does this vault use? *(This is a gap check: it should fail until learning notes exist.)*
+10. What did MEGA S01E03 say about grep versus semantic search, and which one does this vault use? *(This checks the learning zone, answered from [[MEGA-S01E03-Building-Knowledge-Systems]].)*
