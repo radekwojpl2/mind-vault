@@ -6,6 +6,9 @@ tags: [log, okf]
 # OKF — Change Log
 
 ## 2026-10-28
+* **Modified**: [[Note-Types]] — added "Note or Skill?" rule (procedures with a finish check become skills that link to notes).
+
+## 2026-10-28
 * **Added**: [[Note-Types]] — per-type guidance replacing rigid templates (issue #1, Phase 4, "Initialize templates").
 
 ## 2026-10-28

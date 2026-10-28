@@ -59,3 +59,9 @@ Frontmatter for every type follows [[Vault-Profile]]. Indexes and logs only need
 - If it only says *what happened* or *what's next*, it belongs on a `Board`. If it says *why*, it's a `Decision`.
 - If it came from a course, it's a `Lesson`. If it came from your own experiment, it's `Research`. Promote stable, reusable conclusions into a `Pattern` or `Guide`, and link back.
 - A new type is allowed when none of these fit. Add it to this page in the same PR.
+
+## Note or Skill?
+
+- **Note:** "what is X / should I use X / what does it cost". Reference knowledge, kept here with metadata, links and validation.
+- **Skill** (`.claude/skills/<name>/SKILL.md`): "how do I do X", where X is a repeatable procedure with a clear finish check. A skill holds the steps and checks and **links to notes for the content**. It never copies them, so fixing a note fixes the skill.
+- Existing skills: `knowledge` (working with the vault) and `patterns` (routing design work to pattern notes). A pattern note becomes its own skill only when it's a procedure you run often; `safe-migration` from [[Expand-Contract]] is the next candidate.

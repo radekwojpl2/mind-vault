@@ -6,6 +6,11 @@ tags: [log, patterns]
 # Patterns — Change Log
 
 ## 2026-10-28
+> `patterns` router skill
+
+- Modified: [[Patterns.index]] — points agents at the `patterns` skill; new patterns must get a routing row
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 3 (metadata backfill)
 
 - Modified: all concept notes — added `status`, `confidence`, `source`, `updated` per [[Vault-Profile]]; `updated` taken from the last content commit (frontmatter-only and link-fix commits ignored)
