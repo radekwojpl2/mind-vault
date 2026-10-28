@@ -4,7 +4,7 @@ tags: [linkstack, module, analytics, masstransit, events]
 status: stable
 confidence: medium
 source: [https://github.com/radekwojpl2/LinkStack]
-updated: 2026-05-31
+updated: 2026-10-28
 ---
 
 # Analytics Module
@@ -18,10 +18,11 @@ Passively consumes integration events from the Links module and records them as 
 | Project | Layer |
 |---------|-------|
 | `LinkStack.Analytics.Domain` | Domain — `AnalyticsEvent` aggregate |
-| `LinkStack.Analytics.Infrastructure` | Infrastructure — EF Core, MassTransit consumers, query handlers |
+| `LinkStack.Analytics.Application` | Application — references Domain and `BuildingBlocks.Application` |
+| `LinkStack.Analytics.Infrastructure` | Infrastructure — EF Core, MassTransit consumers; references `Links.IntegrationEvents` |
 | `LinkStack.Analytics.Web` | Web — reporting endpoints |
 
-> No separate Application project — query handlers live in Infrastructure alongside consumers.
+> **2026-10-28:** `LinkStack.Analytics.Application` exists on `master` (since at least 2026-04-28). Which handlers moved there from Infrastructure isn't documented yet. `Analytics.Infrastructure` still references `Analytics.Web`; SpecKit tasks #17–#19 remove that ([[LinkStack-Board]]).
 
 ## Domain Entity
 

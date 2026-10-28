@@ -19,7 +19,7 @@ Snapshot from 2026-10-28. The repo was last pushed on 2026-04-22 and has no open
 
 ## Planned
 
-- Nothing recorded. If Sentry returns to LinkStack, start from this POC (see [[LinkStack-Board]], Archived).
+- Nothing recorded. LinkStack has Sentry wired in but disabled (empty DSN). Enabling it would start from this POC (see [[LinkStack-Board]]).
 
 ## Implemented
 

@@ -34,4 +34,4 @@ A proof of concept for **full-stack Sentry observability**: errors, performance 
 
 ## Relationship to Other Projects
 
-- LinkStack added Sentry and removed it again in v1.4.0 (2026-04-22). This POC holds the working setup if it comes back — see [[LinkStack-Context]].
+- In LinkStack, the v1.4.0 changelog lists both "add Sentry integration" and "removed sentry", but `master` (checked 2026-10-28) still references `Sentry.AspNetCore` 6.4.1 and ships an empty `Sentry:Dsn`, so Sentry is wired in but stays off until a DSN is set. To turn it on there, start from this POC — see [[LinkStack-Context]].

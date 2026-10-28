@@ -6,6 +6,12 @@ tags: [log, blue-green-deployment]
 # Blue-Green-Deployment — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 4 (fixes from vault test run 1)
+
+- Modified: [[Blue-Green-Deployment-Architecture]] — slot detection and label handling corrected to match `deploy.yml` (JMESPath query; labels moved with `revision label add`, not via `--revision-suffix`)
+- Modified: [[Blue-Green-Deployment.index]] — dropped stale "(if documented)" hedge, linked all generic patterns
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 3 (metadata backfill)
 
 - Modified: all concept notes — added `status`, `confidence`, `source`, `updated` per [[Vault-Profile]]; `updated` taken from the last content commit (frontmatter-only and link-fix commits ignored)

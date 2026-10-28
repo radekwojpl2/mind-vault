@@ -26,7 +26,7 @@ It is also the primary playground for the engineering patterns in this vault: mo
 | Identity & social | [[Users]] | Auth0 sign-up/provisioning, people, organisations, friend requests, subscriptions/tiers, persisted user settings (jsonb) | Exposes `Users.Public.Client` to other modules |
 | Links | [[Links]] | Links, groups (with colour and icon), sharing, tags, AI tag suggestions | Only module with split Read/Write application projects |
 | Analytics | [[Analytics]] | Consumes link/user events; activity per link and per group; reporting endpoints | Produces no events of its own |
-| Imports | — | Bulk import via MassTransit saga | Not documented yet |
+| Imports | — | Bulk import via MassTransit saga | Designed only (LinkStack repo `docs/modules/M-04-Imports-module.md`, ADR-016); no code on `master`. Related: bookmarks import PR #36 |
 | Short URLs | [[Links]] | Short codes, vanity aliases, premium custom domains | Spec only — [[url-shortener-custom-domains]] |
 
 ## Where the Code Lives
@@ -53,7 +53,7 @@ It is also the primary playground for the engineering patterns in this vault: mo
 
 ## Known Gaps and Drift
 
-- **Imports module** is undocumented.
+- **Imports module** is designed in the LinkStack repo but not implemented on `master`, and not summarised in the vault.
 - **Open stacked PRs (#34–#41)** in the LinkStack repo add bookmarks import/export, a .NET Aspire AppHost, Azure Container Apps deployment, and **replace Table Modules and Specifications with a Dapper read side**. Once merged, [[CQRS]] and the read-side parts of [[Links]] will be outdated.
 - **Open SpecKit tasks (#11–#21)** move endpoint mapping out of each module's Infrastructure into its Web project (`<Module>WebExtensions`). [[LinkStack-Architecture]] does not reflect that yet.
-- Sentry was added and then removed in v1.4.0; observability lessons live in [[Sentry-POC.index]].
+- **Sentry:** the v1.4.0 changelog lists both "add Sentry integration" and "removed sentry", but `master` (checked 2026-10-28) still references `Sentry.AspNetCore` 6.4.1 and ships an empty `Sentry:Dsn`, so Sentry is wired in but stays off until a DSN is set. The full working setup is in [[Sentry-POC.index]].

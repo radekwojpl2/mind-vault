@@ -4,7 +4,7 @@ tags: [blue-green-deployment, architecture, azure, container-apps, github-action
 status: stable
 confidence: medium
 source: [https://github.com/radekwojpl2/blue-green-deployment-poc]
-updated: 2026-05-31
+updated: 2026-10-28
 ---
 
 # Architecture
@@ -50,15 +50,14 @@ Triggers after Build succeeds on `main`:
 The pipeline reads live traffic weights to decide which slot is inactive:
 
 ```bash
-TRAFFIC=$(az containerapp ingress traffic show --name $APP_NAME ...)
-if echo "$TRAFFIC" | grep -q '"blue":100'; then
-  TARGET="green"; SOURCE="blue"
-elif echo "$TRAFFIC" | grep -q '"green":100'; then
-  TARGET="blue"; SOURCE="green"
-else
-  TARGET="blue"; SOURCE="green"   # first deploy
-fi
+ACTIVE_SLOT=$(az containerapp ingress traffic show --name $CONTAINER_APP_NAME ... \
+  --query "[?weight > \`0\` && label != null].label | [0]" -o tsv)
+# ACTIVE_SLOT = blue  → target green
+# ACTIVE_SLOT = green → target blue
+# empty (first deploy) → target blue
 ```
+
+Full step-by-step in [[Pipelines]] (Deploy workflow).
 
 ### Smoke Test URL
 
@@ -79,7 +78,7 @@ az containerapp ingress traffic set \
   --label-weight "$TARGET=100" "$SOURCE=0"
 ```
 
-Revision labels (`blue`, `green`) are set at deploy time via `--revision-suffix`.
+`--revision-suffix <slot>-<sha>` only gives the revision a deterministic *name*. The `blue`/`green` **labels** that drive traffic are moved explicitly with `az containerapp revision label remove/add` before the weights are set.
 
 ## Application Endpoints
 

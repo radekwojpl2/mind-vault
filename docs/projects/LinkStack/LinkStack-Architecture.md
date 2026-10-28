@@ -4,7 +4,7 @@ tags: [linkstack, architecture, dotnet, modular-monolith, clean-architecture]
 status: stable
 confidence: medium
 source: [https://github.com/radekwojpl2/LinkStack]
-updated: 2026-05-31
+updated: 2026-10-28
 ---
 
 # Architecture
@@ -34,7 +34,7 @@ Infrastructure implements Domain interfaces. Domain never depends on Infrastruct
 | `Users` | `users` | People, organisations, friend requests, subscriptions/tiers |
 | `Links` | `links` | Links, groups, sharing, tags, AI tagging |
 | `Analytics` | `analytics` | Consumes link events, tracks activity |
-| `Imports` | `imports` | Bulk import via MassTransit saga *(undocumented)* |
+| `Imports` | `imports` | Bulk import via MassTransit saga. *Designed only: `docs/modules/M-04-Imports-module.md` and ADR-016 in the LinkStack repo; no `Modules/Imports` code on `master` as of 2026-10-28* |
 
 ## Cross-Module Communication
 
@@ -58,7 +58,9 @@ When a module needs to query another module synchronously, it uses the `Public.C
 Links.Application → IUserPublicClient (from Users.Public.Client)
 ```
 
-`Users.Public.Client` is the **only** Users project that non-Users modules may reference. They must never reference `Users.Domain`, `Users.Application`, or `Users.Infrastructure`.
+`Users.Public.Client` is the **only** Users project that non-Users modules may reference *for synchronous calls*. They must never reference `Users.Domain`, `Users.Application`, or `Users.Infrastructure`.
+
+For **async** communication, a consuming module may also reference another module's `*.IntegrationEvents` contracts project. For example, `Analytics.Infrastructure` references `Links.IntegrationEvents` (verified on `master`, 2026-10-28). So the full list of allowed cross-module references is: `<Module>.Public.Client` and `<Module>.IntegrationEvents`.
 
 ## Shared Building Blocks
 
