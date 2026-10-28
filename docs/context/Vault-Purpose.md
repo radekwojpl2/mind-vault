@@ -58,3 +58,25 @@ A subagent that is given **only the vault** answers the test questions below. Th
 8. Where does the URL shortener feature stand, and what's the next step?
 9. What should an error response from a LinkStack endpoint look like?
 10. What did MEGA S01E03 say about grep versus semantic search, and which one does this vault use? *(This checks the learning zone, answered from [[MEGA-S01E03-Building-Knowledge-Systems]].)*
+
+## Test Runs
+
+### Run 1: 2026-10-28, PASS (10/10)
+
+A fresh general-purpose subagent was given only `docs/` and the skill's retrieval protocol, with no web, other repos or prior context. It answered all 10 questions with a citation for every claim. Spot-checks against the notes found no hallucinated facts.
+
+| Q | Result | Note |
+|---|---|---|
+| 1 | Correct, but assembled from 6 notes | No "add a module" guide existed → added [[LinkStack-Adding-A-Module]] |
+| 2–9 | Correct | Q8 was answered straight from Context → Board; Q7 from the DB index |
+| 10 | Correct | Answered from [[MEGA-S01E03-Building-Knowledge-Systems]] |
+
+The friction it reported led to these fixes:
+- Contradiction on cross-module references → [[LinkStack-Architecture]] and [[Global]] now allow `IntegrationEvents` (verified on `master`).
+- Stale details found while checking `master`: Analytics now has an Application project, Imports is designed but not built, and Sentry is still wired in (off) rather than removed. The Sentry and Imports errors were in the boards and context notes written in this refactor.
+- [[Blue-Green-Deployment-Architecture]] contradicted [[Pipelines]] → fixed to match `deploy.yml`.
+- Outbox deduplication vs idempotency → clarified in [[Outbox]].
+- No path from LinkStack to Testing, and generic vs project pattern pairs → Guides section and generic-pattern links added in [[LinkStack.index]].
+- A dead `.sql` path and a code-span link in [[AI-Readonly-User]] → fixed.
+- Missing constitution and demo DB docs → captured in the inbox ([[Inbox.index]]).
+- Known artefact, not fixed: grepping a test question matches this note first. Keep that in mind when reading future runs.

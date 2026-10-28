@@ -6,6 +6,11 @@ tags: [log, context]
 # Context — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 4 (test run 1)
+
+- Modified: [[Vault-Purpose]] — recorded test run 1: PASS 10/10, friction and fixes
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 4 (fixes from vault test run 1, checked against LinkStack `master`)
 
 - Modified: [[Global]] — modular-monolith principle now allows `IntegrationEvents` contracts alongside `Public.Client`
