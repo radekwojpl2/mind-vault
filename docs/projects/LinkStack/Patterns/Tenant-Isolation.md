@@ -68,6 +68,6 @@ Admin endpoints in the Analytics module do this to show tenant-wide activity.
 
 ## Related
 
-- [[Architecture]] — module boundaries, no cross-module FK rule
+- [[LinkStack-Architecture]] — module boundaries, no cross-module FK rule
 - [[Users]] — Auth0 integration, org_id claim mapping
 - [[Analytics]] — admin queries that use IgnoreQueryFilters

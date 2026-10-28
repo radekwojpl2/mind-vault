@@ -53,6 +53,6 @@ Consumers in the Analytics module (and potentially other modules in future) subs
 
 ## Related
 
-- [[Architecture]] — cross-module event flow
+- [[LinkStack-Architecture]] — cross-module event flow
 - [[Analytics]] — primary consumer of Links events
 - [[CQRS]] — commands call eventPublisher before SaveChanges

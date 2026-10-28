@@ -99,4 +99,4 @@ All error responses share the same shape:
 
 - [[Business-Rules]] — BrokenBusinessRuleException maps to 400
 - [[CQRS]] — exceptions bubble up through MediatR pipeline automatically
-- [[Architecture]] — BuildingBlocks.Application owns the exception types
+- [[LinkStack-Architecture]] — BuildingBlocks.Application owns the exception types

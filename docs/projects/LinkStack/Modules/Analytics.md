@@ -61,7 +61,7 @@ Tenant isolation via EF query filters applies here too. Admin endpoints call `Ig
 
 ## Related
 
-- [[Architecture]] — event-driven cross-module communication
+- [[LinkStack-Architecture]] — event-driven cross-module communication
 - [[Outbox]] — how events are reliably delivered to consumers
 - [[Tenant-Isolation]] — query filters
 - [[Links]] — the module that produces all consumed events

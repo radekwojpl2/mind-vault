@@ -40,14 +40,14 @@ blue-green-deployment-poc/
 
 ## Key Patterns
 
-- [[Blue-Green-Deployment/Patterns/Expand-Contract]] — safe schema evolution across two live slots
-- [[Blue-Green-Deployment/Patterns/AI-Migration-Review]] — Claude blocks unsafe migrations in CI
+- [[Blue-Green-Deployment-Expand-Contract]] — safe schema evolution across two live slots
+- [[AI-Migration-Review]] — Claude blocks unsafe migrations in CI
 
 ## Related Generic Patterns
 
-- [[patterns/Expand-Contract]] (if documented)
+- [[Expand-Contract]] (if documented)
 
 ## Sections
 
-- [[Blue-Green-Deployment/Architecture]] — Azure infrastructure, slot switching mechanics
-- [[Blue-Green-Deployment/Pipelines]] — all four workflows in detail (Build, Deploy, Provision, Teardown)
+- [[Blue-Green-Deployment-Architecture]] — Azure infrastructure, slot switching mechanics
+- [[Pipelines]] — all four workflows in detail (Build, Deploy, Provision, Teardown)

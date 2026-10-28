@@ -156,4 +156,4 @@ For large modules, split into separate projects: `Application.Write` (commands) 
 
 ## Real-World Example
 
-- [[projects/LinkStack/Patterns/CQRS]] — `CreateLinkCommand`, `GetGroupQuery`, Table Module queries
+- [[CQRS]] — `CreateLinkCommand`, `GetGroupQuery`, Table Module queries

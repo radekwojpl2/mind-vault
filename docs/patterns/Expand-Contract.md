@@ -87,4 +87,4 @@ ALTER TABLE orders DROP COLUMN client_name;
 
 ## Real-World Example
 
-- [[projects/Blue-Green-Deployment/Patterns/Expand-Contract]] — EF Core implementation renaming `Notes` → `Description` across three migrations, with an AI CI gate enforcing the rules
+- [[Blue-Green-Deployment-Expand-Contract]] — EF Core implementation renaming `Notes` → `Description` across three migrations, with an AI CI gate enforcing the rules

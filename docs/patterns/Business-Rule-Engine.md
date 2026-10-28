@@ -137,4 +137,4 @@ catch (BrokenBusinessRuleException ex)
 
 ## Real-World Example
 
-- [[projects/LinkStack/Patterns/Business-Rules]] — `CannotBeFriendsWithSelfRule`, `FriendRequestMustBePendingRule`
+- [[Business-Rules]] — `CannotBeFriendsWithSelfRule`, `FriendRequestMustBePendingRule`

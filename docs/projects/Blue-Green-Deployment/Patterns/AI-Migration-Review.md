@@ -63,5 +63,5 @@ esac
 
 ## Related
 
-- [[Blue-Green-Deployment/Patterns/Expand-Contract]] — the rules this reviewer enforces
-- [[Blue-Green-Deployment/Architecture]] — where this gate sits in the pipeline
+- [[Blue-Green-Deployment-Expand-Contract]] — the rules this reviewer enforces
+- [[Blue-Green-Deployment-Architecture]] — where this gate sits in the pipeline

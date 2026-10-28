@@ -178,4 +178,4 @@ var order = new OrderBuilder()
 
 ## Real-World Example
 
-- [[projects/LinkStack/Architecture]] — `LinkGroupBuilder`, `LinksTestDataSeeder` used in integration tests to seed groups and shares with specific permissions
+- [[LinkStack-Architecture]] — `LinkGroupBuilder`, `LinksTestDataSeeder` used in integration tests to seed groups and shares with specific permissions

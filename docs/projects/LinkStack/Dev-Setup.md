@@ -80,5 +80,5 @@ Migrations run automatically on startup via `MigrationExtensions.cs`.
 
 ## Related
 
-- [[Architecture]] — service dependencies
+- [[LinkStack-Architecture]] — service dependencies
 - [[Tenant-Isolation]] — schema-per-module migrations

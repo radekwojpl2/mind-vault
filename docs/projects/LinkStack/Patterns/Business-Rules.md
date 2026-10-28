@@ -53,7 +53,7 @@ public void Accept(UserId respondingUserId)
 
 ## Usage in Value Objects
 
-[[Value-Objects]] also call `Check.Rule(...)` inside their `Create` factories:
+[[LinkStack-Value-Objects]] also call `Check.Rule(...)` inside their `Create` factories:
 
 ```csharp
 public static Url Create(string url)
@@ -97,5 +97,5 @@ Rules are pure functions of their inputs — no async, no DB, no side effects. D
 
 ## Related
 
-- [[Value-Objects]] — rules invoked in Create factories
+- [[LinkStack-Value-Objects]] — rules invoked in Create factories
 - [[Error-Handling]] — how BrokenBusinessRuleException becomes an HTTP 400

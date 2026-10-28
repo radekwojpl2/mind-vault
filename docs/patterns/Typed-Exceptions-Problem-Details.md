@@ -231,4 +231,4 @@ Validation error (400):
 
 ## Real-World Example
 
-- [[projects/LinkStack/Patterns/Error-Handling]] — full exception hierarchy, `ExceptionHandlingMiddleware`, `ErrorCodes`
+- [[Error-Handling]] — full exception hierarchy, `ExceptionHandlingMiddleware`, `ErrorCodes`

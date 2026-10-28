@@ -134,4 +134,4 @@ builder.Entity<Order>()
 
 ## Real-World Example
 
-- [[projects/LinkStack/Patterns/Tenant-Isolation]] — `TenantId` query filters on all entities in every module's DbContext
+- [[Tenant-Isolation]] — `TenantId` query filters on all entities in every module's DbContext

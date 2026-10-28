@@ -58,7 +58,7 @@ Other modules that need user information use `IUserPublicClient` from `LinkStack
 
 ## Related
 
-- [[Architecture]] — module dependency rules
+- [[LinkStack-Architecture]] — module dependency rules
 - [[Tenant-Isolation]] — query filters, schema isolation
 - [[Error-Handling]] — typed exceptions used in handlers
 - [[Business-Rules]] — FriendRequest rule examples

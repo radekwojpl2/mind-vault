@@ -90,5 +90,5 @@ Revision labels (`blue`, `green`) are set at deploy time via `--revision-suffix`
 ## Related
 
 - [[Blue-Green-Deployment.index]]
-- [[Blue-Green-Deployment/Patterns/Expand-Contract]]
-- [[Blue-Green-Deployment/Patterns/AI-Migration-Review]]
+- [[Blue-Green-Deployment-Expand-Contract]]
+- [[AI-Migration-Review]]

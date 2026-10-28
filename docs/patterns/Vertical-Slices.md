@@ -197,4 +197,4 @@ See [[CQRS-MediatR]] for the command/query split that vertical slices typically 
 
 ## Real-World Example
 
-- [[projects/LinkStack/Architecture]] — every use-case in Links, Users, and Analytics lives in a `UseCaseName/` folder at both the Web and Application layers; e.g. `Links/CreateLink/CreateLinkEndpoint.cs` + `Links/CreateLink/CreateLinkCommand.cs`
+- [[LinkStack-Architecture]] — every use-case in Links, Users, and Analytics lives in a `UseCaseName/` folder at both the Web and Application layers; e.g. `Links/CreateLink/CreateLinkEndpoint.cs` + `Links/CreateLink/CreateLinkCommand.cs`

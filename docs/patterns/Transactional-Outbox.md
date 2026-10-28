@@ -184,4 +184,4 @@ public async Task Consume(ConsumeContext<OrderCreatedEvent> context)
 
 ## Real-World Example
 
-- [[projects/LinkStack/Patterns/Outbox]] — MassTransit EF outbox in `LinksDbContext`, used by all link/group command handlers
+- [[Outbox]] — MassTransit EF outbox in `LinksDbContext`, used by all link/group command handlers

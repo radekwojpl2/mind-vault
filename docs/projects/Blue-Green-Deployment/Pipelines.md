@@ -22,7 +22,7 @@ Four GitHub Actions workflows. Build and Deploy run automatically on push to `ma
 
 The AI review step runs before tests — a migration blocked here never reaches the deploy pipeline. The `ANTHROPIC_API_KEY` secret is passed in; if absent (fork PRs), the script skips silently.
 
-See [[Blue-Green-Deployment/Patterns/AI-Migration-Review]] for how the review works.
+See [[AI-Migration-Review]] for how the review works.
 
 ---
 
@@ -63,7 +63,7 @@ dotnet ef database update \
   --project blue-green-deployment-poc/... \
   --connection "${{ secrets.POSTGRES_CONNECTION_STRING }}"
 ```
-Migrations run **before** the new slot is created. The old slot is still serving 100% of traffic, so the schema must remain backward compatible with the running code — this is why the [[Blue-Green-Deployment/Patterns/Expand-Contract]] pattern is required.
+Migrations run **before** the new slot is created. The old slot is still serving 100% of traffic, so the schema must remain backward compatible with the running code — this is why the [[Blue-Green-Deployment-Expand-Contract]] pattern is required.
 
 #### 4. Determine target slot
 ```bash
@@ -215,6 +215,6 @@ Deletes the entire resource group and all resources inside it. `--no-wait` means
 ## Related
 
 - [[Blue-Green-Deployment.index]]
-- [[Blue-Green-Deployment/Architecture]]
-- [[Blue-Green-Deployment/Patterns/Expand-Contract]]
-- [[Blue-Green-Deployment/Patterns/AI-Migration-Review]]
+- [[Blue-Green-Deployment-Architecture]]
+- [[Blue-Green-Deployment-Expand-Contract]]
+- [[AI-Migration-Review]]

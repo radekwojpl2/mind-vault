@@ -71,8 +71,8 @@ Read handlers use `ILinkTableModule` / `ILinkGroupTableModule` with composable `
 
 ## Related
 
-- [[Architecture]] — dependency flow
+- [[LinkStack-Architecture]] — dependency flow
 - [[CQRS]] — Commands vs Queries, Table Module, Specification pattern
 - [[Outbox]] — guaranteed event delivery
 - [[Tenant-Isolation]] — EF query filters per tenant
-- [[Value-Objects]] — Url, LinkTitle, Description, TagName, etc.
+- [[LinkStack-Value-Objects]] — Url, LinkTitle, Description, TagName, etc.
