@@ -1,6 +1,10 @@
 ---
 type: Guide
 tags: [db, postgresql, mcp, ai-tooling, setup]
+status: stable
+confidence: medium
+source: [author]
+updated: 2026-06-21
 ---
 
 # AI Readonly PostgreSQL User

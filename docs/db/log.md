@@ -5,6 +5,11 @@ tags: [log, db]
 
 # DB — Change Log
 
+## 2026-10-28
+> Vault refactor, issue #1 Phase 3 (metadata backfill)
+
+- Modified: all concept notes — added `status`, `confidence`, `source`, `updated` per [[Vault-Profile]]; `updated` taken from the last content commit (frontmatter-only and link-fix commits ignored)
+
 ## 2026-06-25
 > Fix OKF conformance: add missing `type: Guide` frontmatter field
 

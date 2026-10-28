@@ -3,6 +3,10 @@ type: Playbook
 title: pg_stat_statements — Query Statistics Extension
 description: How to enable and query pg_stat_statements to see what queries each user has run.
 tags: [db, postgresql, observability, audit, performance]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/mind-vault/tree/main/docker]
+updated: 2026-06-21
 ---
 
 # pg_stat_statements

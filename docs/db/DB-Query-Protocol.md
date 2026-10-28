@@ -1,6 +1,10 @@
 ---
 type: Reference
 tags: [db, postgresql, ai-tooling, workflow]
+status: stable
+confidence: medium
+source: [author, https://github.com/radekwojpl2/mind-vault/tree/main/docker]
+updated: 2026-06-21
 ---
 
 # DB Query Protocol

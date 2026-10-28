@@ -1,6 +1,10 @@
 ---
 type: Script
 tags: [db, postgresql, sql, ai-tooling]
+status: stable
+confidence: medium
+source: [author]
+updated: 2026-06-21
 ---
 
 # create_readonly_user.sql
