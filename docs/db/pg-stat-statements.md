@@ -5,7 +5,7 @@ description: How to enable and query pg_stat_statements to see what queries each
 tags: [db, postgresql, observability, audit, performance]
 status: stable
 confidence: medium
-source: [author, https://github.com/radekwojpl2/mind-vault/tree/main/docker]
+source: [author, environment]
 updated: 2026-06-21
 ---
 

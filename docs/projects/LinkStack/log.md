@@ -6,6 +6,13 @@ tags: [log, linkstack]
 # LinkStack — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 5 (inbox triage)
+
+- Added: [[LinkStack-Constitution]] — distilled v1.1.5 from the LinkStack repo, plus tensions with PR #38, tasks #11–#21 and PRs #37/#40 (triaged from inbox)
+- Modified: [[LinkStack.index]], [[LinkStack-Context]], [[LinkStack-Adding-A-Module]] — link the constitution; bug-fix test sequence and final build/test gate
+- Modified: [[Error-Handling]] — `UnauthorizedException` maps to **401**, not 403 (checked in code)
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 4 (navigation fixes from vault test run 1)
 
 - Added: [[LinkStack-Adding-A-Module]] — checklist guide (test Q1 friction)

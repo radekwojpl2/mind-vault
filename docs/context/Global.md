@@ -49,7 +49,7 @@ Other local repos under `D:\git` (not yet documented here): `aspire-showcase`, `
 - **Claude Code** is the primary agent. Project rules live in each repo's `CLAUDE.md`.
 - MCP servers in use: `codebase-memory-mcp` (code knowledge graph — use it first for code exploration), `mega-challenge` (MEGA.dev course), `claude-in-chrome` (browser automation), `aspire-showcase`.
 - **SpecKit** drives feature work (spec → plan → tasks → implement); see [[Spec-Driven-Development]]. The custom finalize extension writes feature summaries into `docs/projects/<Project>/`.
-- Local demo PostgreSQL in `docker/` with an `ai_readonly` user — see [[DB-Query-Protocol]] and [[AI-Readonly-User]]. Credentials stay in `.claude/settings.local.json`, never in notes.
+- Local demo PostgreSQL in `docker/` (git-ignored, so local only) with an `ai_readonly` user — see [[Demo-Database]] and [[DB-Query-Protocol]]. Credentials stay in `.claude/settings.local.json`, never in notes.
 
 ## Standing Principles
 

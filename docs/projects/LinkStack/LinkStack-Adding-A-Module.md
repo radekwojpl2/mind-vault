@@ -11,7 +11,7 @@ updated: 2026-10-28
 
 # LinkStack — Adding a Module
 
-A checklist drawn from the architecture and pattern notes. Each step links to the note that explains it. Use [[Links]] or [[Users]] as the reference implementation.
+A checklist drawn from the architecture and pattern notes. The binding rules are in [[LinkStack-Constitution]]. Each step links to the note that explains it. Use [[Links]] or [[Users]] as the reference implementation.
 
 > **Watch for drift:** SpecKit tasks #11–#21 move endpoint mapping from each module's Infrastructure into its Web project (`<Module>WebExtensions`). Check [[LinkStack-Board]] before copying step 4.
 
@@ -68,5 +68,6 @@ Never reference another module's Domain, Application or Infrastructure. From Bui
 
 - Integration tests use Testcontainers with real PostgreSQL and RabbitMQ. Never mock the database ([[Integration-Tests]], [[Testcontainers]]).
 - Add architecture tests in a `*.ArchTests` project, and add the new module to the existing boundary tests' `[InlineData]` ([[Architecture-Tests]]).
-- New features also need SpecFlow BDD scenarios ([[BDD-Tests]]).
+- New features also need SpecFlow BDD scenarios ([[BDD-Tests]]). Bug fixes need a reproduction test plus a correct-behaviour test ([[LinkStack-Constitution]], Principle V).
+- Final gate: `dotnet build LinkStack.sln --no-restore`, then an unfiltered `dotnet test` ([[LinkStack-Constitution]]).
 - Unit tests cover the pure domain logic only ([[Unit-Tests]]).

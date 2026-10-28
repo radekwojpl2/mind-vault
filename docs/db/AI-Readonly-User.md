@@ -32,7 +32,7 @@ The script is idempotent — re-running it skips user creation if the role alrea
 
 ## Script
 
-The full SQL is in [[create_readonly_user]]. For the local demo database, the same script runs automatically from `docker/init/09_readonly_user.sql`.
+The full SQL is in [[create_readonly_user]]. The local demo database uses its own variant, which covers all five schemas. See [[Demo-Database]].
 
 ## Revoking Access
 

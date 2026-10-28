@@ -38,10 +38,11 @@ It is also the primary playground for the engineering patterns in this vault: mo
 
 ## Reading Order
 
-1. [[LinkStack-Architecture]] — layers, module map, cross-module rules
-2. The module note for the area in question ([[Users]], [[Links]], [[Analytics]])
-3. The relevant pattern note ([[CQRS]], [[Outbox]], [[Tenant-Isolation]], [[LinkStack-Value-Objects]], [[Business-Rules]], [[Error-Handling]])
-4. [[Authentication]] and [[Dev-Setup]] for security and running locally
+1. [[LinkStack-Constitution]] — the non-negotiable rules
+2. [[LinkStack-Architecture]] — layers, module map, cross-module rules
+3. The module note for the area in question ([[Users]], [[Links]], [[Analytics]])
+4. The relevant pattern note ([[CQRS]], [[Outbox]], [[Tenant-Isolation]], [[LinkStack-Value-Objects]], [[Business-Rules]], [[Error-Handling]])
+5. [[Authentication]] and [[Dev-Setup]] for security and running locally
 
 ## Glossary
 

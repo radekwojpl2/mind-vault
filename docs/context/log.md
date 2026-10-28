@@ -6,6 +6,11 @@ tags: [log, context]
 # Context — Change Log
 
 ## 2026-10-28
+> Vault refactor, issue #1 Phase 5 (inbox triage)
+
+- Modified: [[Global]] — the `docker/` demo DB is local only; links [[Demo-Database]]
+
+## 2026-10-28
 > Vault refactor, issue #1 Phase 5 (validation in CI)
 
 - Added: `Validate vault` GitHub Action (PRs and pushes to `main`) and a `.githooks/pre-commit` hook, both running `scripts/validate-vault.js`

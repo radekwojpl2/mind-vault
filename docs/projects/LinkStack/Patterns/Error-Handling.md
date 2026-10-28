@@ -4,7 +4,7 @@ tags: [linkstack, pattern, error-handling, exceptions, problem-details]
 status: stable
 confidence: medium
 source: [https://github.com/radekwojpl2/LinkStack]
-updated: 2026-05-31
+updated: 2026-10-28
 ---
 
 # Error Handling
@@ -18,7 +18,7 @@ All application exceptions extend `ApplicationExceptionBase`:
 ```
 ApplicationExceptionBase
 ├── NotFoundException       → HTTP 404
-├── UnauthorizedException   → HTTP 403
+├── UnauthorizedException   → HTTP 401   (status set in its constructor; verified on master 2026-10-28)
 ├── BadRequestException     → HTTP 400
 ├── ValidationException     → HTTP 400 (includes field-level errors)
 └── ConflictException       → HTTP 409

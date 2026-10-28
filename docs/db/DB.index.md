@@ -13,6 +13,7 @@ Database tooling, setup scripts, and operational notes.
 
 ## Setup
 
+- [[Demo-Database]] — local multi-tenant demo DB: start/stop, schemas and tables, what `ai_readonly` can read
 - [[AI-Readonly-User]] — read-only PostgreSQL role for AI agents and scripts
 
 ## Observability
